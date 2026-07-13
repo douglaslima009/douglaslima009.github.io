@@ -1,0 +1,137 @@
+/* css/main.css */
+:root {
+    --bg-main: #050505;
+    --bg-panel: #0a0a0a;
+    --bg-item: #0f0f0f;
+    --text-primary: #d1d1d1;
+    --text-accent: #ffffff;
+    --text-dim: #555555;
+    --border-industrial: 1px dashed #222222;
+    --hazard-color: #1a1a1a;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg-main);
+    color: var(--text-primary);
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 1.6;
+    /* Efeito das faixas industriais laterais das capturas do Klubnika */
+    background-image: 
+        linear-gradient(45deg, var(--hazard-color) 25%, transparent 25%, transparent 75%, var(--hazard-color) 75%, var(--hazard-color)),
+        linear-gradient(45deg, var(--hazard-color) 25%, transparent 25%, transparent 75%, var(--hazard-color) 75%, var(--hazard-color));
+    background-size: 40px 40px;
+    background-position: 0 0, 20px 20px;
+    padding: 0 40px;
+}
+
+/* Container centralizado que envelopa o conteúdo preto sobre o fundo industrial */
+.viewport-frame {
+    max-width: 960px;
+    min-height: 100vh;
+    margin: 0 auto;
+    background-color: #000000;
+    border-left: 2px solid #111111;
+    border-right: 2px solid #111111;
+    padding: 40px;
+    position: relative;
+}
+
+/* Header fixo de navegação do terminal */
+header {
+    border-bottom: 2px solid #111111;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 1.6rem;
+    color: var(--text-accent);
+    letter-spacing: 3px;
+}
+
+.nav-links {
+    margin-top: 15px;
+}
+
+.nav-links a {
+    color: var(--text-primary);
+    text-decoration: none;
+    margin-right: 15px;
+    font-size: 0.9rem;
+}
+
+.nav-links a:hover, .nav-links a.active {
+    color: var(--text-accent);
+    text-decoration: underline;
+}
+
+/* Estrutura de Listagem Estilo Terminal [Data] Nome ...... Tempo */
+.terminal-list {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.terminal-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 4px;
+    border-bottom: var(--border-industrial);
+    font-size: 0.9rem;
+}
+
+.terminal-item:hover {
+    background-color: var(--bg-item);
+}
+
+.terminal-item a {
+    color: var(--text-primary);
+    text-decoration: none;
+}
+
+.terminal-item a:hover {
+    color: var(--text-accent);
+}
+
+.date-tag {
+    color: var(--text-accent);
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.time-ago {
+    color: var(--text-dim);
+}
+
+/* Botões Industriais Crueis de Download */
+.btn-download {
+    display: inline-block;
+    background: linear-gradient(180deg, #151515 0%, #0a0a0a 100%);
+    color: var(--text-primary);
+    border: 1px solid #333333;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.85rem;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.btn-download:hover {
+    border-color: var(--text-accent);
+    color: var(--text-accent);
+}
+
+footer {
+    margin-top: 50px;
+    border-top: 2px solid #111111;
+    padding-top: 20px;
+    color: var(--text-dim);
+    font-size: 0.8rem;
+}
