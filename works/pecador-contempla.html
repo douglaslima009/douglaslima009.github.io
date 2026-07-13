@@ -2,6 +2,7 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title data-i18n="title-pecador">OBRAS // PECADOR, CONTEMPLA.</title>
     <link rel="stylesheet" href="../css/main.css">
 </head>
@@ -16,22 +17,54 @@
         </nav>
     </header>
 
-    <main style="display: grid; grid-template-columns: 1.2fr 1fr; gap: 40px;">
+    <main class="grid-two-cols">
+        <!-- Coluna de Informações Técnicas e Links -->
         <div>
-            <p style="margin-bottom: 20px;" data-i18n="pecador-description">
-                Um shooter em primeira pessoa focado em atmosfera sufocante, renderizado com shaders customizados de precisão retro (estilo PSX) e comportamento de inteligência artificial dinâmico sob malhas NavMesh.
+            <div style="background-color: var(--bg-panel); border: var(--border-solid); padding: 15px; margin-bottom: 20px; font-size: 0.85rem;">
+                <p style="margin-bottom: 5px;"><strong>DESENVOLVEDOR:</strong> Douglas Lima</p>
+                <p style="margin-bottom: 5px;"><strong>ENGINE:</strong> Unity / C#</p>
+                <p style="margin-bottom: 5px;"><strong>CONTEXTO:</strong> Global Game Jam 2026</p>
+                <p><strong>ESTILO:</strong> PSX retro aesthetics / Shaders customizados</p>
+            </div>
+
+            <p style="margin-bottom: 20px;" data-i18n="pecador-detailed-desc">
+                Projetado como uma experiência imersiva de horror e tensão. O jogador navega por ambientes gerados com atmosfera opressiva de 32-bit, enquanto enfrenta lógicas de patrulha inteligentes que caçam o som de suas ações.
             </p>
 
             <div class="download-zone">
-                <a href="../downloads/pecador_win.zip" class="btn-download" data-i18n="btn-download-win">Download para Windows (.zip)</a>
-                <a href="https://douglaslima.itch.io/" target="_blank" class="btn-download">// Itch.io →</a>
+                <!-- Seus links crueis de download local ou redirecionamento externo -->
+                <a href="../binaries/games/pecador_win.zip" class="btn-download" data-i18n="btn-dl-win">DOWNLOAD WIN (.ZIP)</a>
+                <a href="https://douglaslima.itch.io/" target="_blank" class="btn-download">PÁGINA DO ITCH.IO →</a>
             </div>
         </div>
         
-        <div>
-            <!-- Espaço reservado para mídia/arte visual -->
+        <!-- Coluna de Anexação de Mídias (Vídeos, GIFs e Imagens) -->
+        <div class="media-gallery">
+            <!-- SLOT 1: Vídeo do Gameplay (Youtube Iframe Responsivo) -->
+            <div class="media-frame">
+                <div class="video-container">
+                    <!-- Substitua o ID 'ID_DO_SEU_VIDEO' pelo ID real do vídeo do YouTube quando subir -->
+                    <iframe src="https://www.youtube.com/embed/ID_DO_SEU_VIDEO" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <!-- SLOT 2: GIF animado de Loop de Gameplay -->
+            <div class="media-frame">
+                <!-- Caminho para o seu GIF de gameplay loop -->
+                <img src="../img/pecador_gameplay_loop.gif" alt="Gameplay Loop - Pecador, Contempla.">
+            </div>
+
+            <!-- SLOT 3: Screenshot estática de atmosfera -->
+            <div class="media-frame">
+                <!-- Caminho para sua imagem JPG/PNG -->
+                <img src="../img/pecador_screenshot_01.jpg" alt="Screenshot 01 - Pecador, Contempla.">
+            </div>
         </div>
     </main>
+
+    <footer>
+        <p><a href="../updates.html">// VER PATCH NOTES DESTE ARTEFATO</a></p>
+    </footer>
 </div>
 </body>
 </html>

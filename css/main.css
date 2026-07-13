@@ -7,7 +7,8 @@
     --text-accent: #ffffff;
     --text-dim: #555555;
     --border-industrial: 1px dashed #222222;
-    --hazard-color: #1a1a1a;
+    --border-solid: 2px solid #111111;
+    --hazard-color: #121212;
 }
 
 * {
@@ -21,68 +22,131 @@ body {
     color: var(--text-primary);
     font-family: 'Courier New', Courier, monospace;
     line-height: 1.6;
-    /* Efeito das faixas industriais laterais das capturas do Klubnika */
     background-image: 
         linear-gradient(45deg, var(--hazard-color) 25%, transparent 25%, transparent 75%, var(--hazard-color) 75%, var(--hazard-color)),
         linear-gradient(45deg, var(--hazard-color) 25%, transparent 25%, transparent 75%, var(--hazard-color) 75%, var(--hazard-color));
     background-size: 40px 40px;
     background-position: 0 0, 20px 20px;
-    padding: 0 40px;
+    padding: 0; /* Removido padding do body para não esmagar no mobile */
 }
 
-/* Container centralizado que envelopa o conteúdo preto sobre o fundo industrial */
+/* Moldura CRT scanline global */
+body::before {
+    content: " ";
+    display: block;
+    position: fixed;
+    top: 0; left: 0; bottom: 0; right: 0;
+    background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%);
+    z-index: 9999;
+    opacity: 0.3;
+    pointer-events: none;
+    background-size: 100% 4px;
+}
+
+/* Container responsivo */
 .viewport-frame {
     max-width: 960px;
     min-height: 100vh;
     margin: 0 auto;
     background-color: #000000;
-    border-left: 2px solid #111111;
-    border-right: 2px solid #111111;
+    border-left: var(--border-solid);
+    border-right: var(--border-solid);
     padding: 40px;
-    position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
-/* Header fixo de navegação do terminal */
+/* Responsividade de paddings para telas menores */
+@media (max-width: 768px) {
+    .viewport-frame {
+        padding: 20px 15px;
+        border-left: none;
+        border-right: none;
+    }
+}
+
+/* Header */
 header {
-    border-bottom: 2px solid #111111;
-    padding-bottom: 20px;
+    border-bottom: var(--border-solid);
+    padding-bottom: 25px;
     margin-bottom: 30px;
 }
 
 header h1 {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     color: var(--text-accent);
     letter-spacing: 3px;
+    text-transform: uppercase;
 }
 
+/* Navegação Inteligente e Responsiva */
 .nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
     margin-top: 15px;
 }
 
 .nav-links a {
     color: var(--text-primary);
     text-decoration: none;
-    margin-right: 15px;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
+    font-weight: bold;
+    padding: 4px 8px;
+    border: 1px solid transparent;
 }
 
 .nav-links a:hover, .nav-links a.active {
     color: var(--text-accent);
-    text-decoration: underline;
+    border: 1px dashed var(--text-dim);
+    background-color: var(--bg-panel);
 }
 
-/* Estrutura de Listagem Estilo Terminal [Data] Nome ...... Tempo */
+@media (max-width: 600px) {
+    .nav-links {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Transforma em grid limpo no celular */
+        gap: 8px;
+    }
+    header h1 {
+        font-size: 1.4rem;
+    }
+}
+
+/* Seção de Destaque CRT (Estilo Mike Klubnika Featured Box) */
+.featured-box {
+    border: var(--border-solid);
+    background-color: var(--bg-panel);
+    padding: 25px;
+    margin-bottom: 40px;
+    position: relative;
+    overflow: hidden;
+}
+
+.featured-box::after {
+    content: "FEATURED_SYSTEM";
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 0.7rem;
+    color: var(--text-dim);
+    letter-spacing: 1px;
+}
+
+/* Listagens Estilo Terminal corrigidas */
 .terminal-list {
     list-style: none;
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
 .terminal-item {
     display: flex;
     justify-content: space-between;
-    padding: 8px 4px;
+    align-items: center;
+    padding: 12px 6px;
     border-bottom: var(--border-industrial);
     font-size: 0.9rem;
+    gap: 15px;
 }
 
 .terminal-item:hover {
@@ -96,42 +160,122 @@ header h1 {
 
 .terminal-item a:hover {
     color: var(--text-accent);
+    text-decoration: underline;
+}
+
+/* Corrige quebra de linha de contato e listas no celular */
+@media (max-width: 640px) {
+    .terminal-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+        padding: 12px 4px;
+    }
+    .terminal-item .time-ago {
+        align-self: flex-end;
+        font-size: 0.75rem;
+    }
 }
 
 .date-tag {
     color: var(--text-accent);
     font-weight: bold;
-    margin-right: 10px;
+    margin-right: 8px;
 }
 
 .time-ago {
     color: var(--text-dim);
 }
 
-/* Botões Industriais Crueis de Download */
+/* Grid de Layouts Internos */
+.grid-two-cols {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 40px;
+}
+
+@media (max-width: 768px) {
+    .grid-two-cols {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
+
+/* Botões de Ação Industriais */
 .btn-download {
     display: inline-block;
-    background: linear-gradient(180deg, #151515 0%, #0a0a0a 100%);
+    background: #0d0d0d;
     color: var(--text-primary);
     border: 1px solid #333333;
-    padding: 10px 20px;
+    padding: 12px 20px;
     text-decoration: none;
     font-weight: bold;
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     margin-right: 10px;
     margin-bottom: 10px;
-    cursor: pointer;
+    text-align: center;
+    transition: all 0.2s ease;
 }
 
 .btn-download:hover {
     border-color: var(--text-accent);
     color: var(--text-accent);
+    background-color: #151515;
+}
+
+/* Áreas de Anexação de Mídia Estilo Portfólio de Game Dev */
+.media-gallery {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.media-frame {
+    border: var(--border-solid);
+    background-color: #030303;
+    padding: 10px;
+    position: relative;
+}
+
+.media-frame::before {
+    content: "MONITOR_FEED";
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+    font-size: 0.6rem;
+    color: #333333;
+}
+
+.media-frame img, .media-frame video {
+    width: 100%;
+    height: auto;
+    display: block;
+    border: 1px solid #111111;
+}
+
+/* Wrapper para Videos Responsivos (Youtube/Vimeo) */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* Proporção 16:9 */
+    height: 0;
+    overflow: hidden;
+    border: 1px solid #111111;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 footer {
-    margin-top: 50px;
-    border-top: 2px solid #111111;
-    padding-top: 20px;
+    margin-top: auto;
+    padding-top: 40px;
+    border-top: var(--border-solid);
     color: var(--text-dim);
     font-size: 0.8rem;
+    text-align: center;
 }
