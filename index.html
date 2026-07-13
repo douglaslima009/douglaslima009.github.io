@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOUGLAS LIMA // ARCHIVE</title>
+    <style>
+        /* Estética Crua e Monospace baseada em Textfiles e Klubnika */
+        :root {
+            --bg-color: #080808;
+            --text-color: #d1d1d1;
+            --accent-color: #ffffff;
+            --dim-color: #555555;
+            --border-style: 1px solid #222222;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Courier New', Courier, monospace;
+            line-height: 1.5;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        /* Elemento sutil de Scanline CRT para dar textura */
+        body::before {
+            content: " ";
+            display: block;
+            position: fixed;
+            top: 0; left: 0; bottom: 0; right: 0;
+            background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+            z-index: 99999;
+            opacity: 0.4;
+            pointer-events: none;
+            background-size: 100% 4px, 6px 100%;
+        }
+
+        header {
+            margin-bottom: 40px;
+            border-bottom: var(--border-style);
+            padding-bottom: 20px;
+        }
+
+        h1 {
+            color: var(--accent-color);
+            font-size: 1.5rem;
+            letter-spacing: 2px;
+            margin-bottom: 5px;
+        }
+
+        .subtitle {
+            color: var(--dim-color);
+            font-size: 0.9rem;
+        }
+
+        nav {
+            margin-top: 15px;
+        }
+
+        nav a {
+            color: var(--text-color);
+            text-decoration: none;
+            margin-right: 20px;
+            font-size: 0.9rem;
+        }
+
+        nav a:hover {
+            color: var(--accent-color);
+            text-decoration: underline;
+        }
+
+        .grid-layout {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 40px;
+        }
+
+        @media (max-width: 768px) {
+            .grid-layout {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            color: var(--accent-color);
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            border-bottom: var(--border-style);
+            padding-bottom: 5px;
+        }
+
+        .manifesto p {
+            margin-bottom: 15px;
+            font-size: 0.95rem;
+            text-align: justify;
+        }
+
+        /* Estilização da lista de artefatos/projetos */
+        .artifact-item {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: var(--border-style);
+            background-color: #0c0c0c;
+        }
+
+        .artifact-title {
+            color: var(--accent-color);
+            font-weight: bold;
+            font-size: 1rem;
+        }
+
+        .artifact-meta {
+            color: var(--dim-color);
+            font-size: 0.8rem;
+            margin-bottom: 5px;
+        }
+
+        /* Estilização do feed de Registry (Logs cronológicos) */
+        .log-feed {
+            font-size: 0.85rem;
+        }
+
+        .log-item {
+            margin-bottom: 15px;
+            border-left: 2px solid var(--dim-color);
+            padding-left: 10px;
+        }
+
+        .log-date {
+            color: var(--accent-color);
+            font-weight: bold;
+        }
+
+        footer {
+            margin-top: 60px;
+            border-top: var(--border-style);
+            padding-top: 20px;
+            color: var(--dim-color);
+            font-size: 0.8rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>DOUGLAS LIMA</h1>
+        <div class="subtitle">Sistemas. Mundos. Histórias.</div>
+        <nav>
+            <a href="#about">// SOBRE</a>
+            <a href="#artifacts">// ARTEFATOS</a>
+            <a href="#registry">// REGISTROS</a>
+            <a href="mailto:seu-email@provedor.com">// CONTATO</a>
+        </nav>
+    </header>
+
+    <main class="grid-layout">
+        <div class="left-column">
+            <!-- Seção de Manifesto Baseada no estilo Direto do Carrd e Textfiles -->
+            <section id="about" class="manifesto">
+                <h2>ERROR_</h2>
+                <p>Construo mundos, sistemas e histórias. Conectando código, game design e narrativa para criar experiências digitais que harmonizam intenção, estrutura e identidade visual.</p>
+                <p>Atualmente focando no desenvolvimento independente de ferramentas, arquiteturas de sistemas estáveis e experimentações imersivas de atmosfera e horror procedural.</p>
+            </section>
+
+            <!-- Catálogo de Projetos Inspirado na visualização do Mike Klubnika -->
+            <section id="artifacts">
+                <h2>[ARTIFACTS]</h2>
+                
+                <div class="artifact-item">
+                    <div class="artifact-title">Pecador, Contempla.</div>
+                    <div class="artifact-meta">Global Game Jam 2026 // Unity & C#</div>
+                    <p>FPS procedural de terror psicológico com estética retro 32-bit (PSX shaders) e sistemas de áudio dinâmicos desenvolvidos em um ciclo contínuo de 72 horas.</p>
+                </div>
+
+                <div class="artifact-item">
+                    <div class="artifact-title">Project V & Project XR</div>
+                    <div class="artifact-meta">VORTEX UFC // Game & Level Design</div>
+                    <p>Explorações de narrativa complexa, loops de gameplay e lógica espacial desenvolvidos em ambiente laboratorial acadêmico.</p>
+                </div>
+
+                <div class="artifact-item">
+                    <div class="artifact-title">YEWS</div>
+                    <div class="artifact-meta">Backend Architecture // Node.js & Redis</div>
+                    <p>Automação estrutural e microsserviços voltados para distribuição de conteúdo em plataformas mobile sob alta demanda.</p>
+                </div>
+            </section>
+        </div>
+
+        <div class="right-column">
+            <!-- Feed de Atualizações Puro inspirado no MikeKlubnika Registry -->
+            <section id="registry">
+                <h2>[REGISTRY]</h2>
+                <div class="log-feed">
+                    <div class="log-item">
+                        <span class="log-date">[13 JUL 2026]</span><br>
+                        Início da reestruturação da infraestrutura do site pessoal. Código limpo migrado para o GitHub. Liberdade criativa total instaurada.
+                    </div>
+                    <div class="log-item">
+                        <span class="log-date">[20 MAI 2026]</span><br>
+                        Ajustes finos em pipelines de renderização retro e documentação de sistemas de IA NavMesh finalizados.
+                    </div>
+                    <div class="log-item">
+                        <span class="log-date">[FEV 2026]</span><br>
+                        "Pecador, Contempla." compilado e arquivado pós-game jam. Sistemas de áudio persistente validados com sucesso.
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 Douglas Lima. Sem templates. Sem rastreadores. Apenas texto e sistemas.</p>
+    </footer>
+</div>
+
+</body>
+</html>
