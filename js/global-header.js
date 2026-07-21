@@ -1,7 +1,7 @@
 /* js/global-header.js */
 (function() {
     // Verifica se a página está dentro da subpasta de obras para arrumar o href
-    const isInnerPage = window.location.pathname.includes('/works/');
+    const isInnerPage = window.location.pathname.includes('/works/') || window.location.pathname.includes('/registry/');
     const prefix = isInnerPage ? '../' : '';
 
     const headerHTML = `

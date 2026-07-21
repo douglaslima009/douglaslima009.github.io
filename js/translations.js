@@ -54,7 +54,15 @@ const translations = {
         // Obras Internas (Pecador, Contempla)
         "pecador-detailed-desc": "Experiência imersiva de horror. O jogador navega por ambientes gerados com atmosfera opressiva de 32-bit, enquanto enfrenta lógicas de patrulha sob malhas NavMesh.",
         "btn-dl-win": "DOWNLOAD WIN (.ZIP)",
-        "ver-patch-notes": "VER PATCH NOTES DESTE PROJETO"
+        "ver-patch-notes": "VER PATCH NOTES DESTE PROJETO",
+
+        "log-1-title": "Reestruturação da Base de Código",
+        "log-1-intro-heading": "INTRODUÇÃO",
+        "log-1-p1": "Este registro documenta a mudança fundamental na arquitetura do site pessoal. O objetivo principal era abandonar os templates estáticos do Carrd e construir uma infraestrutura limpa, hospedada diretamente no GitHub Pages e com controle absoluto sobre cada linha de código.",
+        "log-1-dev-heading": "DESENVOLVIMENTO",
+        "log-1-p2": "A decisão de manter o sistema estático sem frameworks JS pesados (como React ou Vue) garante que o tempo de carregamento seja instantâneo. A identidade visual foi redesenhada para suportar alta densidade de informação em blocos de texto pequenos, acompanhando um sistema automatizado para destacar atualizações recentes e um switcher persistente de idiomas.",
+
+
     },
     "en": {
         // Global Navigation
@@ -66,7 +74,7 @@ const translations = {
         "nav-miscellaneous": "MISCELLANEOUS",
         "nav-contact": "CONTACT",
         "view-all": "view all",
-        "footer-text": "© 2026 Douglas Lima. Clean code. Guaranteed autonomy.",
+        "footer-text": "© 2026 Douglas Lima.",
 
         // Home
         "featured-title": "SYSTEM_FEATURED: PECADOR, CONTEMPLA.",
@@ -110,6 +118,12 @@ const translations = {
         // Internal Works (Pecador, Contempla)
         "pecador-detailed-desc": "Immersive horror experience. The player navigates generated environments with an oppressive 32-bit atmosphere while facing dynamic patrol logic under NavMesh.",
         "btn-dl-win": "DOWNLOAD WIN (.ZIP)",
-        "ver-patch-notes": "VIEW PATCH NOTES FOR THIS PROJECT"
+        "ver-patch-notes": "VIEW PATCH NOTES FOR THIS PROJECT",
+
+        "log-1-title": "Codebase Restructuring",
+        "log-1-intro-heading": "INTRODUCTION",
+        "log-1-p1": "This log documents the fundamental change in the personal site's architecture. The main goal was to abandon Carrd's static templates and build a clean infrastructure, hosted directly on GitHub Pages with absolute control over every line of code.",
+        "log-1-dev-heading": "DEVELOPMENT",
+        "log-1-p2": "The decision to keep the system static without heavy JS frameworks (like React or Vue) ensures instantaneous load times. The visual identity was redesigned to support high information density in small text blocks, accompanied by an automated system to highlight recent updates and a persistent language switcher.",
     }
 };

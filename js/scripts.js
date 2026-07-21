@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
         
         // Atualiza o texto do botão
         if(langToggleButton) {
-            langToggleButton.textContent = lang === 'pt' ? '[ EN ]' : '[ PT ]';
+            langToggleButton.textContent = lang === 'pt' ? '[ PT ]' : '[ EN ]';
         }
     }
 
