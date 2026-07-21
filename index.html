@@ -3,80 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title data-i18n="title-home">DOUGLAS LIMA // ARCHIVE</title>
+    <title data-i18n="title-global">DOUGLAS LIMA</title>
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-<div class="viewport-frame">
-    <header>
-        <h1 data-i18n="header-author">DOUGLAS LIMA</h1>
-        <nav class="nav-links">
-            <a href="about.html" data-i18n="nav-about">// SOBRE</a>
-            <a href="works.html" data-i18n="nav-works">// OBRAS</a>
-            <a href="registry.html" data-i18n="nav-registry">// REGISTROS</a>
-            <a href="updates.html" data-i18n="nav-updates">// UPDATES</a>
-            <a href="miscellaneous.html" data-i18n="nav-miscellaneous">// MISCELÂNEAS</a>
-            <a href="contact.html" data-i18n="nav-contact">// CONTATO</a>
-        </nav>
-    </header>
-
+<div class="viewport-frame" style="position: relative;">
+    <div id="header-container"></div>
     <main>
-        <!-- Bloco CRT de Destaque Estilo Mike Klubnika -->
         <section class="featured-box">
-            <h2 style="color: var(--text-accent); font-size: 1.1rem; margin-bottom: 10px;" data-i18n="featured-title">SYSTEM_FEATURED: PECADOR, CONTEMPLA.</h2>
+            <h2 data-i18n="featured-title">SYSTEM_FEATURED: PECADOR, CONTEMPLA.</h2>
             <div class="grid-two-cols">
                 <div>
-                    <p style="font-size: 0.9rem; margin-bottom: 15px;" data-i18n="featured-desc">
-                        FPS procedural de terror psicológico com estética retrô 32-bit (PSX), gerado em ciclo intensivo de 72 horas para a Global Game Jam 2026. Sistemas ativos de IA tática sob NavMesh e áudio tridimensional imersivo.
-                    </p>
-                    <a href="works/pecador-contempla.html" class="btn-download" data-i18n="featured-enter">// ENTRAR NO ARQUIVO</a>
+                    <p style="font-size: 0.8rem; margin-bottom: 15px;" data-i18n="featured-desc">FPS procedural de terror psicológico com estética retrô 32-bit (PSX), gerado em ciclo intensivo de 72 horas para a Global Game Jam 2026. Sistemas ativos de IA tática sob NavMesh e áudio tridimensional imersivo.</p>
+                    <a href="works/pecador-contempla.html" class="btn-download" data-i18n="featured-enter">ENTRAR NO ARQUIVO</a>
                 </div>
-                <div style="border: 1px solid #222222; background: #000; height: 120px; display: flex; align-items: center; justify-content: center;">
-                    <span style="color: #333333; font-family: monospace; font-size: 0.8rem;">[PREVIEW_STILL_PLACEHOLDER]</span>
+                <div style="border: 1px solid #1a1a1a; background: #000; height: 100px; display: flex; align-items: center; justify-content: center;">
+                    <span style="color: #333333; font-size: 0.7rem;">[PREVIEW_STILL_PLACEHOLDER]</span>
                 </div>
             </div>
         </section>
 
-        <!-- Divisão de feeds em duas colunas funcionais -->
         <div class="grid-two-cols">
             <section>
                 <h2>
-                    <span data-i18n="section-registry">[ULTIMOS REGISTROS]</span> 
-                    <span style="float:right;"><a href="registry.html" style="color:var(--text-dim); font-size:0.75rem;">ver todos</a></span>
+                    <span data-i18n="section-registry">ÚLTIMOS REGISTROS</span> 
+                    <span style="float:right;"><a href="registry.html" style="color:var(--text-dim); text-transform:lowercase; font-size:0.75rem;" data-i18n="view-all">ver todos</a></span>
                 </h2>
                 <ul class="terminal-list">
-                    <li class="terminal-item">
-                        <span>
-                            <span class="date-tag">[13 JUL]</span> 
-                            <a href="registry.html" data-i18n="home-log-3">Conserto estrutural de responsividade e mobile frames</a>
-                        </span>
+                    <li class="terminal-item" data-date="2026-07-13">
+                        <span><span class="date-tag">[13 JUL 2026]</span> <a href="registry.html" data-i18n="home-log-3">Conserto estrutural e automação finalizada</a></span>
                     </li>
-                    <li class="terminal-item">
-                        <span>
-                            <span class="date-tag">[16 MAR]</span> 
-                            <a href="registry.html" data-i18n="home-log-2">Apresentação acadêmica sobre Redes e Jogos Digitais</a>
-                        </span>
+                    <li class="terminal-item" data-date="2026-03-16">
+                        <span><span class="date-tag">[16 MAR 2026]</span> <a href="registry.html" data-i18n="home-log-2">Apresentação acadêmica sobre Redes e Jogos</a></span>
                     </li>
                 </ul>
             </section>
 
             <section>
                 <h2>
-                    <span data-i18n="section-updates">[PATCH NOTES]</span> 
-                    <span style="float:right;"><a href="updates.html" style="color:var(--text-dim); font-size:0.75rem;">ver todos</a></span>
+                    <span data-i18n="section-updates">PATCH NOTES</span> 
+                    <span style="float:right;"><a href="updates.html" style="color:var(--text-dim); text-transform:lowercase; font-size:0.75rem;" data-i18n="view-all">ver todos</a></span>
                 </h2>
                 <ul class="terminal-list">
-                    <li class="terminal-item">
-                        <span>
-                            <span class="date-tag">[20 MAI]</span> 
-                            <a href="works/pecador-contempla.html">[Pecador, Contempla.] v1.0.2 - Audio Fix</a>
-                        </span>
+                    <li class="terminal-item" data-date="2026-05-20">
+                        <span><span class="date-tag">[20 MAI 2026]</span> <a href="works/pecador-contempla.html">[Pecador, Contempla.] v1.0.2 - Audio Fix</a></span>
                     </li>
-                    <li class="terminal-item">
-                        <span>
-                            <span class="date-tag">[12 ABR]</span> 
-                            <a href="updates.html">[iCinema System] v2.1.0 - Reverse Eng</a>
-                        </span>
+                    <li class="terminal-item" data-date="2026-04-12">
+                        <span><span class="date-tag">[12 ABR 2026]</span> <a href="updates.html">[iCinema System] v2.1.0 - Reverse Eng</a></span>
                     </li>
                 </ul>
             </section>
@@ -84,8 +57,12 @@
     </main>
 
     <footer>
-        <p>© 2026 Douglas Lima. Código limpo. Autonomia garantida.</p>
+        <p data-i18n="footer-text">© 2026 Douglas Lima. Código limpo. Autonomia garantida.</p>
     </footer>
 </div>
+<!-- ORDEM CORRETA DOS SCRIPTS -->
+<script src="js/global-header.js"></script>
+<script src="js/translations.js"></script>
+<script src="js/scripts.js"></script>
 </body>
 </html>

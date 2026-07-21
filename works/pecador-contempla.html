@@ -3,68 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title data-i18n="title-pecador">OBRAS // PECADOR, CONTEMPLA.</title>
+    <title data-i18n="title-global">DOUGLAS LIMA</title>
     <link rel="stylesheet" href="../css/main.css">
 </head>
 <body>
-<div class="viewport-frame">
-    <header>
-        <h1>PECADOR, CONTEMPLA.</h1>
-        <nav class="nav-links">
-            <a href="../index.html" data-i18n="nav-home">// HOME</a>
-            <a href="../works.html" class="active" data-i18n="nav-works">// OBRAS</a>
-            <a href="../updates.html" data-i18n="nav-updates">// UPDATES</a>
-        </nav>
-    </header>
-
-    <main class="grid-two-cols">
-        <!-- Coluna de Informações Técnicas e Links -->
+<div class="viewport-frame" style="position: relative;">
+    <!-- O HEADER É CARREGADO AQUI -->
+    <div id="header-container"></div>
+    
+    <main class="grid-two-cols" style="grid-template-columns: 1.2fr 1fr;">
         <div>
-            <div style="background-color: var(--bg-panel); border: var(--border-solid); padding: 15px; margin-bottom: 20px; font-size: 0.85rem;">
-                <p style="margin-bottom: 5px;"><strong>DESENVOLVEDOR:</strong> Douglas Lima</p>
-                <p style="margin-bottom: 5px;"><strong>ENGINE:</strong> Unity / C#</p>
-                <p style="margin-bottom: 5px;"><strong>CONTEXTO:</strong> Global Game Jam 2026</p>
-                <p><strong>ESTILO:</strong> PSX retro aesthetics / Shaders customizados</p>
+            <div style="background-color: var(--bg-panel); border: var(--border-solid); padding: 15px; margin-bottom: 20px;">
+                <p><strong>DESENVOLVEDOR:</strong> Douglas Lima</p>
+                <p><strong>ENGINE:</strong> Unity / C#</p>
+                <p><strong>CONTEXTO:</strong> Global Game Jam 2026</p>
+                <p><strong>ESTILO:</strong> PSX retro / Shaders custom</p>
             </div>
-
             <p style="margin-bottom: 20px;" data-i18n="pecador-detailed-desc">
-                Projetado como uma experiência imersiva de horror e tensão. O jogador navega por ambientes gerados com atmosfera opressiva de 32-bit, enquanto enfrenta lógicas de patrulha inteligentes que caçam o som de suas ações.
+                Experiência imersiva de horror. O jogador navega por ambientes gerados com atmosfera opressiva de 32-bit, enquanto enfrenta lógicas de patrulha sob malhas NavMesh.
             </p>
-
             <div class="download-zone">
-                <!-- Seus links crueis de download local ou redirecionamento externo -->
                 <a href="../binaries/games/pecador_win.zip" class="btn-download" data-i18n="btn-dl-win">DOWNLOAD WIN (.ZIP)</a>
-                <a href="https://douglaslima.itch.io/" target="_blank" class="btn-download">PÁGINA DO ITCH.IO →</a>
+                <a href="https://douglaslima.itch.io/" target="_blank" class="btn-download">ITCH.IO →</a>
             </div>
         </div>
         
-        <!-- Coluna de Anexação de Mídias (Vídeos, GIFs e Imagens) -->
         <div class="media-gallery">
-            <!-- SLOT 1: Vídeo do Gameplay (Youtube Iframe Responsivo) -->
             <div class="media-frame">
                 <div class="video-container">
-                    <!-- Substitua o ID 'ID_DO_SEU_VIDEO' pelo ID real do vídeo do YouTube quando subir -->
-                    <iframe src="https://www.youtube.com/embed/ID_DO_SEU_VIDEO" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/ID_AQUI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                 </div>
             </div>
-
-            <!-- SLOT 2: GIF animado de Loop de Gameplay -->
             <div class="media-frame">
-                <!-- Caminho para o seu GIF de gameplay loop -->
-                <img src="../img/pecador_gameplay_loop.gif" alt="Gameplay Loop - Pecador, Contempla.">
-            </div>
-
-            <!-- SLOT 3: Screenshot estática de atmosfera -->
-            <div class="media-frame">
-                <!-- Caminho para sua imagem JPG/PNG -->
-                <img src="../img/pecador_screenshot_01.jpg" alt="Screenshot 01 - Pecador, Contempla.">
+                <img src="../img/pecador_gameplay_loop.gif" alt="Gameplay Loop">
             </div>
         </div>
     </main>
-
     <footer>
-        <p><a href="../updates.html">// VER PATCH NOTES DESTE ARTEFATO</a></p>
+        <p><a href="../updates.html" data-i18n="ver-patch-notes">VER PATCH NOTES DESTE PROJETO</a></p>
     </footer>
 </div>
+<!-- CAMINHOS VOLTANDO UMA PASTA -->
+<script src="../js/global-header.js"></script>
+<script src="../js/translations.js"></script>
+<script src="../js/scripts.js"></script>
 </body>
 </html>

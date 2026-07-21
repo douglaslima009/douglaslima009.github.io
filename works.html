@@ -3,49 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title data-i18n="title-works">DOUGLAS LIMA // OBRAS</title>
+    <title data-i18n="title-global">DOUGLAS LIMA</title>
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-<div class="viewport-frame">
-    <header>
-        <h1 data-i18n="header-author">DOUGLAS LIMA</h1>
-        <nav class="nav-links">
-            <a href="index.html" data-i18n="nav-home">// HOME</a>
-            <a href="about.html" data-i18n="nav-sobre">// SOBRE</a>
-            <a href="works.html" class="active" data-i18n="nav-works">// OBRAS</a>
-            <a href="registry.html" data-i18n="nav-registros">// REGISTROS</a>
-            <a href="updates.html" data-i18n="nav-updates">// UPDATES</a>
-            <a href="miscellaneous.html" data-i18n="nav-miscellaneous">// MISCELÂNEAS</a>
-            <a href="contact.html" data-i18n="nav-contact">// CONTATO</a>
-        </nav>
-    </header>
-
+<div class="viewport-frame" style="position: relative;">
+    <div id="header-container"></div>
     <main>
         <h2 data-i18n="works-all-title">ALL WORKS</h2>
         <ul class="terminal-list">
-            <li class="terminal-item">
-                <span><span class="date-tag">[FEB 2026]</span> <a href="works/pecador-contempla.html">Pecador, Contempla.</a></span>
-                <span class="time-ago">Experimental Horror FPS</span>
+            <li class="terminal-item" data-date="2026-02-08">
+                <span><span class="date-tag">[08 FEV 2026]</span> <a href="works/pecador-contempla.html">Pecador, Contempla.</a></span>
+                <span class="time-ago" data-i18n="works-desc-pecador">Experimental Horror FPS</span>
             </li>
-            <li class="terminal-item">
-                <span><span class="date-tag">[2025-PRES]</span> <a href="works/project-v.html">Project V (V-VECTOR)</a></span>
-                <span class="time-ago">Narrative Puzzle Game</span>
+            <li class="terminal-item" data-date="2025-09-01">
+                <span><span class="date-tag">[SET 2025]</span> <a href="works/project-v.html">Project V (V-VECTOR)</a></span>
+                <span class="time-ago" data-i18n="works-desc-v">Narrative Puzzle Game</span>
             </li>
-            <li class="terminal-item">
-                <span><span class="date-tag">[2025-PRES]</span> <a href="works/project-xr.html">Project XR (XR Torque)</a></span>
-                <span class="time-ago">Gameplay Prototyping</span>
+            <li class="terminal-item" data-date="2025-10-01">
+                <span><span class="date-tag">[OUT 2025]</span> <a href="works/project-xr.html">Project XR (XR Torque)</a></span>
+                <span class="time-ago" data-i18n="works-desc-xr">Gameplay Prototyping</span>
             </li>
-            <li class="terminal-item">
-                <span><span class="date-tag">[2024]</span> <a href="works/yews.html">YEWS (YEESY Platform)</a></span>
-                <span class="time-ago">Backend Service</span>
+            <li class="terminal-item" data-date="2024-12-01">
+                <span><span class="date-tag">[DEZ 2024]</span> <a href="works/yews.html">YEWS (YEESY Platform)</a></span>
+                <span class="time-ago" data-i18n="works-desc-yews">Backend Service</span>
             </li>
         </ul>
     </main>
 
     <footer>
-        <p>Douglas Lima © 2026</p>
+        <p data-i18n="footer-text">© 2026 Douglas Lima. Código limpo. Autonomia garantida.</p>
     </footer>
 </div>
+<script src="js/global-header.js"></script>
+<script src="js/translations.js"></script>
+<script src="js/scripts.js"></script>
 </body>
 </html>
