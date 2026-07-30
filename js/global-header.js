@@ -1,14 +1,15 @@
 /* js/global-header.js */
 (function() {
-    // Verifica se a página está dentro da subpasta de obras para arrumar o href
-    const isInnerPage = window.location.pathname.includes('/works/') || window.location.pathname.includes('/registry/');
+    // Verifica a URL atual para injetar o "../" caso esteja em qualquer subpasta
+    const url = window.location.href;
+    const isInnerPage = url.includes('/works/') || url.includes('/registry/') || url.includes('/updates/');
     const prefix = isInnerPage ? '../' : '';
 
     const headerHTML = `
         <header>
             <h1 data-i18n="header-author">DOUGLAS LIMA</h1>
             
-            <!-- O Botão de Idioma Fixo aqui no Header -->
+            <!-- Botão de Tradução -->
             <button id="lang-toggle" class="lang-toggle"></button>
             
             <nav class="nav-links">
@@ -23,6 +24,5 @@
         </header>
     `;
     
-    // Injeta o cabeçalho no container vazio do HTML
     document.getElementById('header-container').innerHTML = headerHTML;
 })();

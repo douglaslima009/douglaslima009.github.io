@@ -1,61 +1,88 @@
 /* js/scripts.js */
 document.addEventListener('DOMContentLoaded', () => {
-    /* =========================================
-       1. SISTEMA AUTOMÁTICO DE TAGS "!!! NEW !!!"
-       ========================================= */
-    const DIAS_NOVO = 14;
-    const threshold = DIAS_NOVO * 24 * 60 * 60 * 1000;
-    const now = new Date();
-    const items = document.querySelectorAll('[data-date]');
-
-    items.forEach(item => {
-        const itemDate = new Date(item.getAttribute('data-date'));
-        if (!isNaN(itemDate) && (now - itemDate) < threshold) {
-            const newTag = document.createElement('span');
-            newTag.className = 'tag-new';
-            newTag.textContent = '!!! NEW !!! ';
-            const spanContainer = item.querySelector('span');
-            if (spanContainer) spanContainer.prepend(newTag);
-        }
-    });
-
-    /* =========================================
-       2. SISTEMA DE INTERNACIONALIZAÇÃO (i18n)
-       ========================================= */
-    const langToggleButton = document.getElementById('lang-toggle');
     
-    // Checa se o usuário já escolheu um idioma antes (salvo no navegador). Se não, usa PT.
-    let currentLang = localStorage.getItem('siteLang') || 'pt';
+    // Objeto auxiliar para o texto "dias atrás"
+    const timeText = {
+        'pt': ' dias atrás',
+        'en': ' days ago'
+    };
 
-    // Função que varre a página e traduz tudo
-    function updateLanguage(lang) {
-        document.querySelectorAll('[data-i18n]').forEach(element => {
-            const key = element.getAttribute('data-i18n');
-            if (translations[lang] && translations[lang][key]) {
-                // Preserva o conteúdo HTML interno (como as tags <strong> ou <a>) se existirem
-                if(element.tagName === 'A' && element.children.length > 0) {
-                     // Caso específico para manter a tag de data se o link a englobar
-                } else {
-                    element.innerHTML = translations[lang][key];
+    function initSystem() {
+        // Puxa o idioma salvo, padrão é PT
+        let currentLang = localStorage.getItem('siteLang') || 'pt';
+
+        function updateLanguage(lang) {
+            // Traduz os textos
+            document.querySelectorAll('[data-i18n]').forEach(element => {
+                const key = element.getAttribute('data-i18n');
+                if (translations[lang] && translations[lang][key]) {
+                    // Impede que a injeção quebre links e spans internos
+                    if(element.tagName === 'A' && element.children.length > 0) {
+                        // Preserva
+                    } else {
+                        element.innerHTML = translations[lang][key];
+                    }
+                }
+            });
+            
+            // Garante que o botão mostre sempre o idioma de DESTINO
+            const langBtn = document.getElementById('lang-toggle');
+            if(langBtn) {
+                langBtn.textContent = lang === 'pt' ? '[ PT ]' : '[ EN ]';
+            }
+        }
+
+        // Executa a primeira tradução ao carregar a página
+        updateLanguage(currentLang);
+
+        // Adiciona a funcionalidade de clique no botão
+        const langBtn = document.getElementById('lang-toggle');
+        if (langBtn) {
+            langBtn.addEventListener('click', () => {
+                currentLang = currentLang === 'pt' ? 'en' : 'pt';
+                localStorage.setItem('siteLang', currentLang);
+                updateLanguage(currentLang);
+                processTagsAndDates(currentLang); // Atualiza também os "dias atrás"
+            });
+        }
+        
+        processTagsAndDates(currentLang);
+    }
+
+    // Calcula Tag NEW e Dias Atrás
+    function processTagsAndDates(lang) {
+        const DIAS_NOVO = 14;
+        const msPorDia = 24 * 60 * 60 * 1000;
+        const threshold = DIAS_NOVO * msPorDia;
+        const now = new Date();
+        const items = document.querySelectorAll('[data-date]');
+
+        items.forEach(item => {
+            const itemDate = new Date(item.getAttribute('data-date'));
+            
+            if (!isNaN(itemDate)) {
+                const diffTime = Math.abs(now - itemDate);
+                const diffDays = Math.ceil(diffTime / msPorDia); 
+                
+                // Atualiza o texto dos dias decorridos
+                const calcTimeContainer = item.querySelector('.calc-time');
+                if(calcTimeContainer) {
+                    calcTimeContainer.textContent = diffDays + timeText[lang];
+                }
+
+                // Injeta a Tag !!! NEW !!! se a postagem for recente
+                if ((now - itemDate) < threshold) {
+                    if(!item.querySelector('.tag-new')) {
+                        const newTag = document.createElement('span');
+                        newTag.className = 'tag-new';
+                        newTag.textContent = '!!! NEW !!! ';
+                        const spanContainer = item.querySelector('span');
+                        if (spanContainer) spanContainer.prepend(newTag);
+                    }
                 }
             }
         });
-        
-        // Atualiza o texto do botão
-        if(langToggleButton) {
-            langToggleButton.textContent = lang === 'pt' ? '[ PT ]' : '[ EN ]';
-        }
     }
 
-    // Traduz a página imediatamente ao carregar
-    updateLanguage(currentLang);
-
-    // Evento de clique no botão de trocar idioma
-    if (langToggleButton) {
-        langToggleButton.addEventListener('click', () => {
-            currentLang = currentLang === 'pt' ? 'en' : 'pt';
-            localStorage.setItem('siteLang', currentLang); // Salva a escolha
-            updateLanguage(currentLang);
-        });
-    }
+    initSystem();
 });

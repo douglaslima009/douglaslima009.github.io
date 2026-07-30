@@ -9,58 +9,92 @@
 <body>
 <div class="viewport-frame" style="position: relative;">
     <div id="header-container"></div>
+    
     <main>
-        <section class="featured-box">
-            <h2 data-i18n="featured-title">SYSTEM_FEATURED: PECADOR, CONTEMPLA.</h2>
-            <div class="grid-two-cols">
-                <div>
-                    <p style="font-size: 0.8rem; margin-bottom: 15px;" data-i18n="featured-desc">FPS procedural de terror psicológico com estética retrô 32-bit (PSX), gerado em ciclo intensivo de 72 horas para a Global Game Jam 2026. Sistemas ativos de IA tática sob NavMesh e áudio tridimensional imersivo.</p>
-                    <a href="works/pecador-contempla.html" class="btn-download" data-i18n="featured-enter">ENTRAR NO ARQUIVO</a>
+        <p style="margin-bottom: 40px; font-size: 0.9rem; text-align: justify; color: var(--text-primary);" data-i18n="home-intro">
+            Bem-vindo ao meu arquivo. Construo mundos, sistemas e histórias. A maior parte dos meus projetos envolve atmosferas imersivas, suspenses psicológicos e mecânicas experimentais. Sinta-se à vontade para explorar o catálogo.
+        </p>
+
+        <section class="featured-box" style="padding: 0; overflow: hidden; border: 1px solid #1a1a1a;">
+            <div style="display: flex; flex-wrap: wrap;">
+                
+                <!-- METADE ESQUERDA: Título, Texto e Botão (com padding interno pra não colar na borda) -->
+                <div style="flex: 1 1 300px; padding: 25px; display: flex; flex-direction: column;">
+                    <h2 data-i18n="featured-title" style="margin-bottom: 15px;">SYSTEM_FEATURED: PECADOR, CONTEMPLA.</h2>
+                    <p style="font-size: 0.8rem; margin-bottom: 25px;" data-i18n="featured-desc">FPS procedural de terror psicológico com estética retrô 32-bit (PSX), gerado em ciclo intensivo de 72 horas para a Global Game Jam 2026. Sistemas ativos de IA tática sob NavMesh e áudio tridimensional imersivo.</p>
+                    
+                    <!-- Empurra o botão pro chão da caixa -->
+                    <div style="margin-top: auto;">
+                        <a href="works/pecador-contempla.html" class="btn-download" data-i18n="featured-enter" style="margin: 0;">ENTRAR NO ARQUIVO</a>
+                    </div>
                 </div>
-                <div style="border: 1px solid #1a1a1a; background: #000; height: 100px; display: flex; align-items: center; justify-content: center;">
-                    <span style="color: #333333; font-size: 0.7rem;">[PREVIEW_STILL_PLACEHOLDER]</span>
+                
+                <!-- METADE DIREITA: Imagem cobrindo 100% (sem padding, encostando nas bordas) -->
+                <div style="flex: 1 1 300px; position: relative; min-height: 220px; background: #000; border-left: 1px solid #1a1a1a;">
+                    <img src="images/pc1.png" alt="Preview Pecador, Contempla" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; filter: grayscale(10%) contrast(1.1);">
                 </div>
+                
             </div>
         </section>
 
-        <div class="grid-two-cols">
-            <section>
-                <h2>
-                    <span data-i18n="section-registry">ÚLTIMOS REGISTROS</span> 
-                    <span style="float:right;"><a href="registry.html" style="color:var(--text-dim); text-transform:lowercase; font-size:0.75rem;" data-i18n="view-all">ver todos</a></span>
-                </h2>
-                <ul class="terminal-list">
-                    <li class="terminal-item" data-date="2026-07-13">
-                        <span><span class="date-tag">[13 JUL 2026]</span> <a href="registry.html" data-i18n="home-log-3">Conserto estrutural e automação finalizada</a></span>
-                    </li>
-                    <li class="terminal-item" data-date="2026-03-16">
-                        <span><span class="date-tag">[16 MAR 2026]</span> <a href="registry.html" data-i18n="home-log-2">Apresentação acadêmica sobre Redes e Jogos</a></span>
-                    </li>
-                </ul>
-            </section>
+        <section style="margin-bottom: 40px;">
+            <h2>
+                <span data-i18n="section-works">CATÁLOGO</span> 
+                <span style="float:right;"><a href="works.html" style="color:var(--text-dim); text-transform:lowercase; font-size:0.75rem;" data-i18n="view-all">ver todos</a></span>
+            </h2>
+            <ul class="terminal-list">
+                <li class="terminal-item" data-date="2026-02-08">
+                    <span><span class="date-tag">[08 FEV 2026]</span> <a href="works/pecador-contempla.html">Pecador, Contempla.</a></span>
+                    <span class="time-ago"><span class="calc-time"></span></span>
+                </li>
+                <li class="terminal-item" data-date="2025-09-01">
+                    <span><span class="date-tag">[SET 2025]</span> <a href="works/project-v.html">Project V (V-VECTOR)</a></span>
+                    <span class="time-ago"><span class="calc-time"></span></span>
+                </li>
+            </ul>
+        </section>
 
-            <section>
-                <h2>
-                    <span data-i18n="section-updates">PATCH NOTES</span> 
-                    <span style="float:right;"><a href="updates.html" style="color:var(--text-dim); text-transform:lowercase; font-size:0.75rem;" data-i18n="view-all">ver todos</a></span>
-                </h2>
-                <ul class="terminal-list">
-                    <li class="terminal-item" data-date="2026-05-20">
-                        <span><span class="date-tag">[20 MAI 2026]</span> <a href="works/pecador-contempla.html">[Pecador, Contempla.] v1.0.2 - Audio Fix</a></span>
-                    </li>
-                    <li class="terminal-item" data-date="2026-04-12">
-                        <span><span class="date-tag">[12 ABR 2026]</span> <a href="updates.html">[iCinema System] v2.1.0 - Reverse Eng</a></span>
-                    </li>
-                </ul>
-            </section>
-        </div>
+        <!-- Registros Expandidos -->
+        <section style="margin-bottom: 40px;">
+            <h2>
+                <span data-i18n="section-registry">REGISTROS</span> 
+                <span style="float:right;"><a href="registry.html" style="color:var(--text-dim); text-transform:lowercase; font-size:0.75rem;" data-i18n="view-all">ver todos</a></span>
+            </h2>
+            <ul class="terminal-list">
+                <li class="terminal-item" data-date="2026-07-13">
+                    <span><span class="date-tag">[13 JUL 2026]</span> <a href="registry/log-1.html" data-i18n="log-1">Estrutura modular plana, novos estilos tipográficos compactos e tags dinâmicas acopladas.</a></span>
+                    <span class="time-ago"><span class="calc-time"></span></span>
+                </li>
+                <li class="terminal-item" data-date="2026-03-16">
+                    <span><span class="date-tag">[16 MAR 2026]</span> <a href="registry/log-2.html" data-i18n="log-2">Apresentação concluída sobre redes aplicadas a games.</a></span>
+                    <span class="time-ago"><span class="calc-time"></span></span>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Updates Apontando para as Novas Páginas Internas -->
+        <section style="margin-bottom: 40px;">
+            <h2>
+                <span data-i18n="section-updates">PATCH NOTES</span> 
+                <span style="float:right;"><a href="updates.html" style="color:var(--text-dim); text-transform:lowercase; font-size:0.75rem;" data-i18n="view-all">ver todos</a></span>
+            </h2>
+            <ul class="terminal-list">
+                <li class="terminal-item" data-date="2026-05-20">
+                    <span><span class="date-tag">[20 MAI 2026]</span> <a href="updates/pecador-1-0-2.html"><strong>[Pecador, Contempla.]</strong> v1.0.2 - Audio Fixes</a></span>
+                    <span class="time-ago"><span class="calc-time"></span></span>
+                </li>
+                <li class="terminal-item" data-date="2026-04-12">
+                    <span><span class="date-tag">[12 ABR 2026]</span> <a href="updates/icinema-2-1-0.html"><strong>[iCinema Project]</strong> v2.1.0 - Engine Rewrite</a></span>
+                    <span class="time-ago"><span class="calc-time"></span></span>
+                </li>
+            </ul>
+        </section>
     </main>
 
     <footer>
         <p data-i18n="footer-text">© 2026 Douglas Lima.</p>
     </footer>
 </div>
-<!-- ORDEM CORRETA DOS SCRIPTS -->
 <script src="js/global-header.js"></script>
 <script src="js/translations.js"></script>
 <script src="js/scripts.js"></script>

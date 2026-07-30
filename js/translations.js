@@ -10,9 +10,11 @@ const translations = {
         "nav-miscellaneous": "MISCELÂNEAS",
         "nav-contact": "CONTATO",
         "view-all": "ver todos",
-        "footer-text": "© 2026 Douglas Lima. Código limpo. Autonomia garantida.",
+        "footer-text": "© 2026 createdbydouglaslima.",
 
         // Home
+        "home-intro": "Bem-vindo ao meu arquivo. Construo mundos, sistemas e histórias. A maior parte dos meus projetos envolve atmosferas imersivas, suspenses psicológicos e mecânicas experimentais. Sinta-se à vontade para explorar o catálogo.",
+        "section-works": "CATÁLOGO",
         "featured-title": "SYSTEM_FEATURED: PECADOR, CONTEMPLA.",
         "featured-desc": "FPS procedural de terror psicológico com estética retrô 32-bit (PSX), gerado em ciclo intensivo de 72 horas para a Global Game Jam 2026. Sistemas ativos de IA tática sob NavMesh e áudio tridimensional imersivo.",
         "featured-enter": "ENTRAR NO ARQUIVO",
@@ -74,9 +76,11 @@ const translations = {
         "nav-miscellaneous": "MISCELLANEOUS",
         "nav-contact": "CONTACT",
         "view-all": "view all",
-        "footer-text": "© 2026 Douglas Lima.",
+        "footer-text": "© 2026 createdbydouglaslima.",
 
         // Home
+        "home-intro": "Welcome to my archive. I build worlds, systems, and stories. Most of my projects involve immersive atmospheres, psychological suspense, and experimental mechanics. Feel free to explore the catalog.",
+        "section-works": "CATALOGUE",
         "featured-title": "SYSTEM_FEATURED: PECADOR, CONTEMPLA.",
         "featured-desc": "Procedural psychological horror FPS with 32-bit retro aesthetics (PSX), developed in an intensive 72-hour cycle for the Global Game Jam 2026. Active tactical AI systems under NavMesh and immersive 3D audio.",
         "featured-enter": "ACCESS ARCHIVE",
