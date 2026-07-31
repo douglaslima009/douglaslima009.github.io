@@ -25,9 +25,26 @@ const translations = {
 
         // Sobre
         "about-manifesto-title": "MANIFESTO",
-        "about-manifesto-p1": "Sou desenvolvedor de jogos e engenheiro de software. Meu foco principal é transformar conceitos abstratos em sistemas jogáveis e funcionais, equilibrando direção criativa, mecânicas sólidas e execução técnica rigorosa.",
+        "about-manifesto-p1": "Douglas Lima Menezes, atuando profissionalmente como \"createdbydouglaslima\", é um desenvolvedor de jogos e engenheiro de software independente do Brasil.",
+        "about-manifesto-p2": "Com o foco em construir mundos, sistemas e histórias, Douglas passa a maior parte do seu tempo desenvolvendo projetos que envolvem atmosferas imersivas, suspenses psicológicos e mecânicas experimentais, buscando sempre equilibrar direção criativa com uma execução técnica rigorosa.",
         "about-exp-title": "EXPERIÊNCIA",
+        // Sobre - Listas
+        "about-exp-1": "<span><strong>LearningLab</strong> - Lead Game Designer</span><span class='time-ago'>2025 - PRES</span>",
+        "about-exp-2": "<span><strong>VORTEX UFC</strong> - Lead Game Director</span><span class='time-ago'>2025 - PRES</span>",
+        "about-exp-3": "<span><strong>YEEZY (USA)</strong> - Junior Backend Engineer</span><span class='time-ago'>2024</span>",
+        "about-exp-4": "<span><strong>AAA Studio (NDA)</strong> - QA & Technical Tester</span><span class='time-ago'>2025</span>",
+
         "about-edu-title": "EDUCAÇÃO",
+
+        "about-edu-1": "<span><strong>Universidade Federal do Ceará</strong> - Bacharelado em Engenharia de Software</span><span class='time-ago'>2023 - PRES</span>",
+        "about-edu-2": "<span><strong>EEEP Walquer Cavalcante Maia</strong> - Ensino Médio Técnico em Informática</span><span class='time-ago'>2020 - 2022</span>",
+        "about-edu-3": "<span><strong>Voxy</strong> - Certificado de Proficiência em Inglês</span><span class='time-ago'>2026</span>",
+        "about-edu-4": "<span><strong>Epic Games</strong> - Desenvolvimento e Prototipagem de Jogos</span><span class='time-ago'>2025</span>",
+        "about-edu-5": "<span><strong>California Institute of the Arts</strong> - Histórias e Narrativas para Videogames</span><span class='time-ago'>2025</span>",
+        "about-edu-6": "<span><strong>Google</strong> - Certificado de Gestão de Projetos Ágeis</span><span class='time-ago'>2024 - 2025</span>",
+        "about-edu-7": "<span><strong>Udemy</strong> - Unity 3D com C#</span><span class='time-ago'>2024</span>",
+        "about-edu-8": "<span><strong>AWS Academy Graduate</strong> - Fundamentos da Nuvem</span><span class='time-ago'>2022</span>",
+        "about-edu-9": "<span><strong>Olimpíada Brasileira de Astronomia - Level 3</strong> - Medalha de Bronze</span><span class='time-ago'>2022</span>",
 
         // Obras
         "works-all-title": "TODAS AS OBRAS",
@@ -91,9 +108,23 @@ const translations = {
 
         // About
         "about-manifesto-title": "MANIFESTO",
-        "about-manifesto-p1": "I am a game developer and software engineer. My main focus is transforming abstract concepts into playable and functional systems, balancing creative direction, solid mechanics, and rigorous technical execution.",
+        "about-manifesto-p1": "Douglas Lima Menezes, professionally known as \"createdbydouglaslima\", is an independent game developer and software engineer from Brazil.",
+        "about-manifesto-p2": "Focusing on building worlds, systems, and stories, Douglas spends most of his time developing projects that involve immersive atmospheres, psychological suspense, and experimental mechanics, always striving to balance creative direction with rigorous technical execution.",
         "about-exp-title": "EXPERIENCE",
+        "about-exp-1": "<span><strong>LearningLab</strong> - Lead Game Designer</span><span class='time-ago'>2025 - PRESENT</span>",
+        "about-exp-2": "<span><strong>VORTEX UFC</strong> - Lead Game Director</span><span class='time-ago'>2025 - PRESENT</span>",
+        "about-exp-3": "<span><strong>YEEZY (USA)</strong> - Junior Backend Engineer</span><span class='time-ago'>2024</span>",
+        "about-exp-4": "<span><strong>AAA Studio (NDA)</strong> - QA & Technical Tester</span><span class='time-ago'>2025</span>",
         "about-edu-title": "EDUCATION",
+        "about-edu-1": "<span><strong>Federal University of Ceará</strong> - B.S. in Software Engineering</span><span class='time-ago'>2023 - PRESENT</span>",
+        "about-edu-2": "<span><strong>EEEP Walquer Cavalcante Maia</strong> - Technical High School Degree in IT</span><span class='time-ago'>2020 - 2022</span>",
+        "about-edu-3": "<span><strong>Voxy</strong> - English Proficiency Certificate</span><span class='time-ago'>2026</span>",
+        "about-edu-4": "<span><strong>Epic Games</strong> - Game Development and Prototyping</span><span class='time-ago'>2025</span>",
+        "about-edu-5": "<span><strong>California Institute of the Arts</strong> - Stories and Narratives for Video Games</span><span class='time-ago'>2025</span>",
+        "about-edu-6": "<span><strong>Google</strong> - Agile Project Management Certificate</span><span class='time-ago'>2024 - 2025</span>",
+        "about-edu-7": "<span><strong>Udemy</strong> - Unity 3D with C#</span><span class='time-ago'>2024</span>",
+        "about-edu-8": "<span><strong>AWS Academy Graduate</strong> - Cloud Fundamentals</span><span class='time-ago'>2022</span>",
+        "about-edu-9": "<span><strong>Brazilian Astronomy Olympiad - Level 3</strong> - Bronze Medal</span><span class='time-ago'>2022</span>",
 
         // Works
         "works-all-title": "ALL WORKS",

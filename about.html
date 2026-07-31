@@ -10,26 +10,50 @@
 <div class="viewport-frame" style="position: relative;">
     <div id="header-container"></div>
     <main>
-        <section style="margin-bottom: 25px;">
+        <section style="margin-bottom: 35px;">
             <h2 data-i18n="about-manifesto-title">MANIFESTO</h2>
-            <p data-i18n="about-manifesto-p1">Sou desenvolvedor de jogos e engenheiro de software. Meu foco principal é transformar conceitos abstratos em sistemas jogáveis e funcionais, equilibrando direção criativa, mecânicas sólidas e execução técnica rigorosa.</p>
+
+            <p data-i18n="about-manifesto-p1" style="text-align: justify; margin-bottom: 15px;">
+                Douglas Lima Menezes, atuando profissionalmente como "createdbydouglaslima", é um desenvolvedor de jogos e engenheiro de software independente do Brasil.
+            </p>
+            
+            <p data-i18n="about-manifesto-p2" style="text-align: justify; margin-bottom: 15px;">
+                Com o foco em construir mundos, sistemas e histórias, Douglas passa a maior parte do seu tempo desenvolvendo projetos que envolvem atmosferas imersivas, suspenses psicológicos e mecânicas experimentais, buscando sempre equilibrar direção criativa com uma execução técnica rigorosa.
+            </p>
         </section>
 
-        <section style="margin-bottom: 25px;">
+        <!-- NOVA SEÇÃO DE EXPERIÊNCIA COM O GLOBO 3D -->
+        <section style="margin-bottom: 35px;">
             <h2 data-i18n="about-exp-title">EXPERIÊNCIA</h2>
+            
+            <div id="globe-container" class="globe-wrapper">
+                <!-- Tooltip que aparece ao clicar nos marcadores -->
+                <div id="globe-tooltip" class="globe-tooltip"></div>
+                <!-- Dica visual no canto -->
+                <div class="globe-instruction">[ MOUSE_DRAG: ROTATE ] | [ CLICK_NODE: READ ]</div>
+            </div>
+            
+    <!-- Fallback textual de Experiência -->
             <ul class="terminal-list">
-                <li class="terminal-item"><span><strong>LearningLab</strong> - Lead Game Designer</span><span class="time-ago">2025 - PRES</span></li>
-                <li class="terminal-item"><span><strong>VORTEX UFC</strong> - Lead Game Director</span><span class="time-ago">2025 - PRES</span></li>
-                <li class="terminal-item"><span><strong>YEEZY (USA)</strong> - Junior Backend Engineer</span><span class="time-ago">2024</span></li>
-                <li class="terminal-item"><span><strong>AAA Studio (NDA)</strong> - QA & Technical Tester</span><span class="time-ago">2025</span></li>
+                <li class="terminal-item" data-i18n="about-exp-1"><span><strong>LearningLab</strong> - Lead Game Designer</span><span class="time-ago">2025 - PRES</span></li>
+                <li class="terminal-item" data-i18n="about-exp-2"><span><strong>VORTEX UFC</strong> - Lead Game Director</span><span class="time-ago">2025 - PRES</span></li>
+                <li class="terminal-item" data-i18n="about-exp-3"><span><strong>YEEZY (USA)</strong> - Junior Backend Engineer</span><span class="time-ago">2024</span></li>
+                <li class="terminal-item" data-i18n="about-exp-4"><span><strong>AAA Studio (NDA)</strong> - QA & Technical Tester</span><span class="time-ago">2025</span></li>
             </ul>
         </section>
 
         <section style="margin-bottom: 25px;">
             <h2 data-i18n="about-edu-title">EDUCAÇÃO</h2>
             <ul class="terminal-list">
-                <li class="terminal-item"><span><strong>UFC Russas</strong> - B.S. Engenharia de Software</span><span class="time-ago">2027</span></li>
-                <li class="terminal-item"><span><strong>EEEP WCM</strong> - Técnico em TI</span><span class="time-ago">2020 - 2022</span></li>
+                <li class="terminal-item" data-i18n="about-edu-1"><span><strong>Universidade Federal do Ceará</strong> - Bacharelado em Engenharia de Software</span><span class="time-ago">2023 - PRES</span></li>
+                <li class="terminal-item" data-i18n="about-edu-2"><span><strong>EEEP Walquer Cavalcante Maia</strong> - Ensino Médio Técnico em Informática</span><span class="time-ago">2020 - 2022</span></li>
+                <li class="terminal-item" data-i18n="about-edu-3"><span><strong>Voxy</strong> - Certificado de Proficiência em Inglês</span><span class="time-ago">2026</span></li>
+                <li class="terminal-item" data-i18n="about-edu-4"><span><strong>Epic Games</strong> - Desenvolvimento e Prototipagem de Jogos</span><span class="time-ago">2025</span></li>
+                <li class="terminal-item" data-i18n="about-edu-5"><span><strong>California Institute of the Arts</strong> - Histórias e Narrativas para Videogames</span><span class="time-ago">2025</span></li>
+                <li class="terminal-item" data-i18n="about-edu-6"><span><strong>Google</strong> - Certificado de Gestão de Projetos Ágeis</span><span class="time-ago">2024 - 2025</span></li>
+                <li class="terminal-item" data-i18n="about-edu-7"><span><strong>Udemy</strong> - Unity 3D com C#</span><span class="time-ago">2024</span></li>
+                <li class="terminal-item" data-i18n="about-edu-8"><span><strong>AWS Academy Graduate</strong> - Fundamentos da Nuvem</span><span class="time-ago">2022</span></li>
+                <li class="terminal-item" data-i18n="about-edu-9"><span><strong>Olimpíada Brasileira de Astronomia - Level 3</strong> - Medalha de Bronze</span><span class="time-ago">2022</span></li>
             </ul>
         </section>
     </main>
@@ -38,8 +62,16 @@
         <p data-i18n="footer-text">© 2026 Douglas Lima.</p>
     </footer>
 </div>
+
+<!-- Scripts de Infraestrutura 3D (Carregados via CDN) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+
+<!-- Seus Scripts Originais -->
 <script src="js/global-header.js"></script>
 <script src="js/translations.js"></script>
 <script src="js/scripts.js"></script>
+<script src="js/globe.js"></script> <!-- Script do Globo no final -->
+
 </body>
 </html>
