@@ -1,3 +1,4 @@
+/* js/globe.js */
 document.addEventListener('DOMContentLoaded', () => {
     const container = document.getElementById('globe-container');
     if (!container) return;
@@ -12,10 +13,14 @@ document.addEventListener('DOMContentLoaded', () => {
     renderer.setSize(container.clientWidth, container.clientHeight);
     container.appendChild(renderer.domElement);
 
+    // CONFIGURAÇÃO DOS CONTROLES (ZOOM ATIVADO COM LIMITES FÍSICOS)
     const controls = new THREE.OrbitControls(camera, renderer.domElement);
     controls.enableDamping = true;
     controls.dampingFactor = 0.05;
-    controls.enableZoom = false;
+    controls.enableZoom = true;       // Permite o Scroll
+    controls.zoomSpeed = 0.7;         // Deixa a rolagem um pouco mais "pesada" e mecânica
+    controls.minDistance = 7.5;       // Impede que a câmera entre dentro do globo (Raio = 6)
+    controls.maxDistance = 25;        // Impede que o usuário dê zoom out infinito
 
     const globeGroup = new THREE.Group();
     scene.add(globeGroup);
@@ -51,11 +56,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // GOOGLE MAPS
     const experiences = [
+        { id: 'exp8', lat: -3.74, lon: -38.52, title: "Lead Game Designer", company: "CENTEC", year: "2026 - PRES" },
+        { id: 'exp7', lat: 61.01, lon: 25.52, title: "QA & Technical Game Tester", company: "AAA Studio (NDA)", year: "2026 - PRES" },
         { id: 'exp1', lat: -4.96, lon: -37.97, title: "Lead Game Designer", company: "LearningLab", year: "2025 - PRES" },
         { id: 'exp2', lat: -3.73, lon: -38.52, title: "Lead Game Director", company: "VORTEX UFC", year: "2025 - PRES" },
         { id: 'exp3', lat: 34.084759, lon: -118.337290, title: "Junior Backend Eng.", company: "YEEZY (USA)", year: "2024" },
-        { id: 'exp4', lat: 60.1699, lon: 24.9384, title: "QA & Tech Tester", company: "AAA Studio (NDA)", year: "2025" }
+        { id: 'exp4', lat: 60.1699, lon: 24.9384, title: "QA & Technical Game Tester", company: "AAA Studio (NDA)", year: "2025" },
+        { id: 'exp5', lat: -23.46, lon: -46.52, title: "Team Lead & Software Engineer", company: "Bionic Productions", year: "2023" },
+        { id: 'exp6', lat: -5.12, lon: -40.52, title: "Full-Stack Software Developer Intern", company: "Ecatege Contabilidade & Serviços", year: "2022" },
     ];
+    
     function calcPosFromLatLonRad(lat, lon, radius) {
         const phi = (90 - lat) * (Math.PI / 180);
         const theta = lon * (Math.PI / 180);
@@ -140,7 +150,6 @@ document.addEventListener('DOMContentLoaded', () => {
         globeGroup.rotation.y += 0.002; 
         controls.update();
 
-        // LÓGICA DE TRACKING: Atualiza a posição da notificação a cada frame
         if (activeMarker && tooltip.style.opacity == 1) {
             const vector = activeMarker.position.clone();
             vector.applyMatrix4(globeGroup.matrixWorld);

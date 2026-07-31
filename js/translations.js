@@ -31,8 +31,12 @@ const translations = {
         // Sobre - Listas
         "about-exp-1": "<span><strong>LearningLab</strong> - Lead Game Designer</span><span class='time-ago'>2025 - PRES</span>",
         "about-exp-2": "<span><strong>VORTEX UFC</strong> - Lead Game Director</span><span class='time-ago'>2025 - PRES</span>",
+        "about-exp-4": "<span><strong>AAA Studio (NDA)</strong> - QA & Technical Game Tester</span><span class='time-ago'>2025</span>",
         "about-exp-3": "<span><strong>YEEZY (USA)</strong> - Junior Backend Engineer</span><span class='time-ago'>2024</span>",
-        "about-exp-4": "<span><strong>AAA Studio (NDA)</strong> - QA & Technical Tester</span><span class='time-ago'>2025</span>",
+        "about-exp-5": "<span><strong>Bionic Productions</strong> - Team Lead & Software Engineer</span><span class='time-ago'>2023</span>",
+        "about-exp-6": "<span><strong>Ecatege Contabilidade & Serviços</strong> - Full-Stack Software Developer Internship</span><span class='time-ago'>2022</span>",
+        "about-exp-7": "<span><strong>AAA Studio (NDA)</strong> - QA & Technical Game Tester</span><span class='time-ago'>2026 - PRES</span>",
+        "about-exp-8": "<span><strong>CENTEC</strong> - Lead Game Designer</span><span class='time-ago'>2026 - PRES</span>",
 
         "about-edu-title": "EDUCAÇÃO",
 
@@ -113,8 +117,12 @@ const translations = {
         "about-exp-title": "EXPERIENCE",
         "about-exp-1": "<span><strong>LearningLab</strong> - Lead Game Designer</span><span class='time-ago'>2025 - PRESENT</span>",
         "about-exp-2": "<span><strong>VORTEX UFC</strong> - Lead Game Director</span><span class='time-ago'>2025 - PRESENT</span>",
+        "about-exp-4": "<span><strong>AAA Studio (NDA)</strong> - QA & Technical Game Tester</span><span class='time-ago'>2025</span>",
         "about-exp-3": "<span><strong>YEEZY (USA)</strong> - Junior Backend Engineer</span><span class='time-ago'>2024</span>",
-        "about-exp-4": "<span><strong>AAA Studio (NDA)</strong> - QA & Technical Tester</span><span class='time-ago'>2025</span>",
+        "about-exp-5": "<span><strong>Bionic Productions</strong> - Team Lead & Software Engineer</span><span class='time-ago'>2023</span>",
+        "about-exp-6": "<span><strong>Ecatege Contabilidade & Serviços</strong> - Full-Stack Software Developer Internship</span><span class='time-ago'>2022</span>",
+        "about-exp-7": "<span><strong>AAA Studio (NDA)</strong> - QA & Technical Game Tester</span><span class='time-ago'>2026 - PRESENT</span>",
+        "about-exp-8": "<span><strong>CENTEC</strong> - Lead Game Designer</span><span class='time-ago'>2026 - PRESENT</span>",
         "about-edu-title": "EDUCATION",
         "about-edu-1": "<span><strong>Federal University of Ceará</strong> - B.S. in Software Engineering</span><span class='time-ago'>2023 - PRESENT</span>",
         "about-edu-2": "<span><strong>EEEP Walquer Cavalcante Maia</strong> - Technical High School Degree in IT</span><span class='time-ago'>2020 - 2022</span>",
