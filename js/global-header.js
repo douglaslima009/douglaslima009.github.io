@@ -9,7 +9,7 @@
         <header style="margin-bottom: 40px; position: relative;">
             <div style="margin-bottom: 20px;">
                 <h1 data-i18n="header-author" style="margin: 0;">
-                    <a href="${prefix}index.html" style="color: inherit; text-decoration: none;">DOUGLAS LIMA</a>
+                    <a href="${prefix}index.html" style="color: inherit; text-decoration: none;">DOUGLAS LIMA.</a>
                 </h1>
             </div>
             

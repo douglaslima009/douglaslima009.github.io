@@ -25,7 +25,7 @@ const translations = {
 
         // Sobre
         "about-manifesto-title": "MANIFESTO",
-        "about-manifesto-p1": "Douglas Lima Menezes, atuando profissionalmente como \"createdbydouglaslima\", é um desenvolvedor de jogos e engenheiro de software independente do Brasil.",
+        "about-manifesto-p1": "Douglas Lima Menezes, atuando profissionalmente como \"Douglas Lima.\" e \"createdbydouglaslima\", é um desenvolvedor de jogos e engenheiro de software independente do Brasil.",
         "about-manifesto-p2": "Com o foco em construir mundos, sistemas e histórias, Douglas passa a maior parte do seu tempo desenvolvendo projetos que envolvem atmosferas imersivas, suspenses psicológicos e mecânicas experimentais, buscando sempre equilibrar direção criativa com uma execução técnica rigorosa.",
         "about-exp-title": "EXPERIÊNCIA",
         // Sobre - Listas
@@ -60,22 +60,40 @@ const translations = {
         //Obras - Pecador, Contempla
         "pecador-meta-dev": "<span style='color: var(--text-dim);'>Desenvolvedor:</span> Douglas Lima",
         "pecador-meta-collab": "<span style='color: var(--text-dim);'>Colaboração com:</span> Douglas Lima",
-        "pecador-meta-genre": "<span style='color: var(--text-dim);'>Gênero:</span> FPS / Terror Psicológico",
+        "pecador-meta-genre": "<span style='color: var(--text-dim);'>Gênero:</span> FPS / Horror",
         "pecador-meta-engine": "<span style='color: var(--text-dim);'>Engine:</span> Unity",
-        "pecador-desc-1": "Acorde. Eles têm algo para te mostrar.",
         "pecador-desc-2": "Um FPS de terror psicológico procedural criado em menos de 72 horas para Global Game Jam 2026.",
         "pecador-desc-3": "Apresenta sistemas ativos de IA tática sob NavMesh e áudio 3D imersivo, utilizando shaders PSX customizados para emular a estética retrô de 32-bit.",
-        "pecador-warn": "Aviso de conteúdo: Terror atmosférico e ruídos altos.",
+        "pecador-warn": "Aviso de conteúdo: Terror atmosférico e luzes piscando.",
 
         //Obras - ZALA
         "zala-meta-dev": "<span style='color: var(--text-dim);'>Desenvolvedor:</span> Douglas Lima",
         "zala-meta-collab": "<span style='color: var(--text-dim);'>Colaboração com:</span> Douglas Lima",
-        "zala-meta-genre": "<span style='color: var(--text-dim);'>Gênero:</span> FPS / TPS / Tactical-Psychological",
+        "zala-meta-genre": "<span style='color: var(--text-dim);'>Gênero:</span> FPS / TPS / Tático-Psicológico",
         "zala-meta-engine": "<span style='color: var(--text-dim);'>Engine:</span> Unreal Engine",
         "zala-desc-1": "Log do Sistema: PROTOCOLO DE DEPRECIAÇÃO DE ATIVOS INICIADO. Nenhuma assinatura acústica detectada. Interferência eletromagnética em níveis críticos.",
         "zala-desc-2": "ZALA é um FPS/TPS \"tático-psicológico\" centrado em guerra eletrônica assimétrica. Em um campo de batalha desumanizado por conglomerados militares, você não opera armas convencionais. Você comanda frequências, jammers direcionais e arrays de combate projetados para caçar e fritar conexões inimigas.",
         "zala-desc-3": "Aqui, o silêncio é absoluto, pesado e opressor.",
-        "zala-warn": "Aviso de conteúdo: Terror atmosférico intenso, ruídos altos e imagens perturbadoras.",
+        "zala-warn": "Aviso de conteúdo: Terror atmosférico, ruídos altos e imagens perturbadoras.",
+
+        //Obras - V
+        "projv-meta-dev": "<span style='color: var(--text-dim);'>Desenvolvedor:</span> VORTEX",
+        "projv-meta-genre": "<span style='color: var(--text-dim);'>Gênero:</span> Aventura Narrativa / Quebra-Cabeça",
+        "projv-meta-engine": "<span style='color: var(--text-dim);'>Engine:</span> Unity",
+        "projv-desc-1": "Falha de Sistema: Ruptura Dimensional Detectada no Nodo Zeta. A The Boundary Corporation aconselha evacuação imediata.",
+        "projv-desc-2": "O jogador controla Kalina Hansen, uma engenheira de manutenção enviada a uma instalação de pesquisa abandonada para restaurar o equilíbrio dimensional usando o dispositivo Taranis.",
+        "projv-desc-3": "A jogabilidade foca em resolver quebra-cabeças espaciais através de uma interface holográfica 3D, corrigindo vetores e manipulando matrizes para estabilizar o ambiente.",
+        "projv-warn": "Aviso: O conteúdo da compilação de design associada está em desenvolvimento. Atualmente, estou trabalhando no jogo completo, que será lançado no futuro. A propriedade Project V é de posse da VORTEX.",
+
+        //Obras - MOP
+        "mop-meta-dev": "<span style='color: var(--text-dim);'>Desenvolvido por:</span> LearningLab / LLabGames",
+        "mop-meta-genre": "<span style='color: var(--text-dim);'>Gênero:</span> Estratégia / Educacional",
+        "mop-meta-format": "<span style='color: var(--text-dim);'>Formato:</span> Jogo de Tabuleiro Físico",
+        "mop-desc-1": "Master of Patterns é um jogo de estratégia, movimentação e aprendizado.",
+        "mop-desc-2": "Cada jogador assume o papel de um mago aprendiz em uma jornada pelo Templo dos Padrões, buscando recuperar um compêndio de conhecimento arcano sobre os padrões de projeto compilado pelo Gang of Four (GoF).",
+        "mop-desc-3": "O tabuleiro é composto por bibliotecas místicas (divididas em padrões Criacionais, Estruturais e Comportamentais), corredores e áreas de combate intelectual, onde os jogadores utilizam pontos de conhecimento para duelar.",
+        "mop-desc-4": "Uma versão online está atualmente em desenvolvimento, e mais atualizações virão em breve.",
+        "mop-warn": "Nota: Este é um jogo de mesa projetado para 2 a 6 jogadores, focado no ensino de engenharia de software.",
 
         // Registros
         "registry-all-title": "DIÁRIO DE DESENVOLVIMENTO",
@@ -133,7 +151,7 @@ const translations = {
 
         // About
         "about-manifesto-title": "MANIFESTO",
-        "about-manifesto-p1": "Douglas Lima Menezes, professionally known as \"createdbydouglaslima\", is an independent game developer and software engineer from Brazil.",
+        "about-manifesto-p1": "Douglas Lima Menezes, professionally known as \"Douglas Lima.\" and \"createdbydouglaslima\", is an independent game developer and software engineer from Brazil.",
         "about-manifesto-p2": "Focusing on building worlds, systems, and stories, Douglas spends most of his time developing projects that involve immersive atmospheres, psychological suspense, and experimental mechanics, always striving to balance creative direction with rigorous technical execution.",
         "about-exp-title": "EXPERIENCE",
         "about-exp-1": "<span><strong>LearningLab</strong> - Lead Game Designer</span><span class='time-ago'>2025 - PRES</span>",
@@ -165,12 +183,11 @@ const translations = {
         // Works - Pecador, Contempla
         "pecador-meta-dev": "<span style='color: var(--text-dim);'>Developed by:</span> Douglas Lima",
         "pecador-meta-collab": "<span style='color: var(--text-dim);'>Collaboration with:</span> Douglas Lima",
-        "pecador-meta-genre": "<span style='color: var(--text-dim);'>Genre:</span> FPS / Psychological Horror",
+        "pecador-meta-genre": "<span style='color: var(--text-dim);'>Genre:</span> FPS / Horror",
         "pecador-meta-engine": "<span style='color: var(--text-dim);'>Engine:</span> Unity",
-        "pecador-desc-1": "Wake up. They have something to show you.",
         "pecador-desc-2": "A procedural psychological horror FPS created in under 72 hours for Global Game Jam 2026.",
         "pecador-desc-3": "Features active tactical AI systems under NavMesh and immersive 3D audio, using custom PSX shaders to emulate retro 32-bit aesthetics.",
-        "pecador-warn": "Content warning: Atmospheric horror and loud noises.",
+        "pecador-warn": "Content warning: Atmospheric horror and flashing lights.",
 
         // Works - ZALA
         "zala-meta-dev": "<span style='color: var(--text-dim);'>Developed by:</span> Douglas Lima",
@@ -180,8 +197,26 @@ const translations = {
         "zala-desc-1": "SYSTEM LOG: ASSET DEPRECIATION PROTOCOL INITIATED. No acoustic signature detected. Electromagnetic interference at critical thresholds.",
         "zala-desc-2": "ZALA is a \"tactical-psychological\" FPS/TPS centered around asymmetric electronic warfare. In a battlefield dehumanized by military conglomerates, you do not operate conventional firearms. You command frequencies, directional jammers, and combat arrays engineered to hunt and fry enemy connections.",
         "zala-desc-3": "Here, silence is absolute, heavy, and oppressive.",
-        "zala-warn": "Content warning: Intense atmospheric horror, loud noises, and disturbing imagery.",
-        
+        "zala-warn": "Content warning: Atmospheric horror, loud noises, and disturbing imagery.",
+
+        // Works - V
+        "projv-meta-dev": "<span style='color: var(--text-dim);'>Developed by:</span> VORTEX",
+        "projv-meta-genre": "<span style='color: var(--text-dim);'>Genre:</span> Narrative Adventure / Puzzle",
+        "projv-meta-engine": "<span style='color: var(--text-dim);'>Engine:</span> Unity",
+        "projv-desc-1": "System Failure: Dimensional Rift Detected at Node Zeta. The Boundary Corporation advises immediate evacuation.",
+        "projv-desc-2": "The player controls Kalina Hansen, a maintenance engineer sent to an abandoned research facility to restore dimensional balance using the Taranis device.",
+        "projv-desc-3": "Gameplay focuses on solving spatial puzzles through a 3D holographic interface, correcting vectors and manipulating matrices to stabilize the environment. Currently, only the introductory scene in Kalina's room is fully playable within the engine, setting the stage for encounters with the mysterious entity known as Elias, or 'The Fractured'.",
+        "projv-warn": "Warning: The content of the associated design compilation is in development. I am currently working on the full game, which will be released in the future. The Project V property is possessed by VORTEX.",
+
+        // Works - MOP
+        "mop-meta-dev": "<span style='color: var(--text-dim);'>Developed by:</span> LearningLab / LLabGames",
+        "mop-meta-genre": "<span style='color: var(--text-dim);'>Genre:</span> Strategy / Educational",
+        "mop-meta-format": "<span style='color: var(--text-dim);'>Format:</span> Physical Board Game",
+        "mop-desc-1": "Master of Patterns is a strategy, movement, and learning game.",
+        "mop-desc-2": "Each player takes on the role of an apprentice mage on a journey through the Temple of Patterns, seeking to recover an arcane compendium of knowledge about the Gang of Four (GoF) design patterns.",
+        "mop-desc-3": "The board consists of mystical libraries (divided into Creational, Structural, and Behavioral patterns), corridors, and intellectual combat areas, where players use knowledge points to duel.",
+        "mop-desc-4": "An online version is currently in development, and more updates will be coming soon.",
+        "mop-warn": "Note: This is a tabletop game designed for 2 to 6 players, focused on teaching software engineering.",
 
         // Registry
         "registry-all-title": "DEVELOPMENT LOGS",
@@ -196,7 +231,6 @@ const translations = {
         "miscellaneous-title": "MISCELLANEOUS ARCHIVE",
         "miscellaneous-subtitle": "Direct downloads of local, tracker-free resources.",
 
-        // Contact
         // Contact
         "contact-title": "CONTACT",
         "contact-p1": "Feel free to send me a message at <a href='mailto:douglaslima0929@gmail.com' style='color: var(--text-primary); text-decoration: underline;'>douglaslima0929@gmail.com</a>!",

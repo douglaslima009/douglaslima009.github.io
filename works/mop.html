@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="title-global">DOUGLAS LIMA.</title>
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+<div class="viewport-frame" style="position: relative;">
+    <div id="header-container"></div>
+    
+    <main>
+        <!-- CABEÇALHO (Título e Data na mesma linha) -->
+        <div class="log-header">
+            <h2 class="log-title" style="margin: 0; text-transform: none;">Masters of Patterns</h2>
+            <span class="log-date">14 JUN 2026</span>
+        </div>
+        
+        <!-- BLOCO FLUTUANTE À DIREITA (Apenas a Imagem/Vídeo) -->
+        <div style="float: right; margin: 0 0 20px 30px; width: 100%; max-width: 320px;">
+            <div style="border: var(--border-solid); background: #000; padding: 5px;">
+                <img src="../images/capamop.png" alt="Masters of Patterns Board" style="width: 100%; display: block; filter: grayscale(10%) contrast(1.1);">
+            </div>
+            <div style="border: var(--border-solid); background: #000; padding: 5px; margin-top: 10px;">
+                <img src="../images/mopcarta.jpg" alt="Combat Cards" style="width: 100%; display: block; filter: grayscale(10%) contrast(1.1);">
+            </div>
+        </div>
+
+        <!-- METADADOS CRUS (Agora com i18n em cada linha) -->
+        <div style="margin-bottom: 25px; font-size: 0.8rem; line-height: 1.8;">
+            <div data-i18n="mop-meta-dev"><span style="color: var(--text-dim);">Developed by:</span> LearningLab / LLabGames</div>
+            <div data-i18n="mop-meta-genre"><span style="color: var(--text-dim);">Genre:</span> Strategy / Educational</div>
+            <div data-i18n="mop-meta-format"><span style="color: var(--text-dim);">Format:</span> Physical Board Game</div>
+        </div>
+
+        <!-- DESCRIÇÃO FLUIDA -->
+        <p style="margin-bottom: 15px; text-align: justify; font-style: italic;" data-i18n="mop-desc-1">
+            Masters of Patterns is a strategy, movement, and learning game.
+        </p>
+        <p style="margin-bottom: 15px; text-align: justify;" data-i18n="mop-desc-2">
+            Each player takes on the role of an apprentice mage on a journey through the Temple of Patterns, seeking to recover an arcane compendium of knowledge about the Gang of Four (GoF) design patterns.
+        </p>
+        <p style="margin-bottom: 15px; text-align: justify;" data-i18n="mop-desc-3">
+            The board consists of mystical libraries (divided into Creational, Structural, and Behavioral patterns), corridors, and intellectual combat areas, where players use knowledge points to duel.
+        </p>
+        <p style="margin-bottom: 15px; text-align: justify;" data-i18n="mop-desc-4">
+            Uma versão online está atualmente em desenvolvimento, e mais atualizações virão em breve.
+        </p>
+        <p style="margin-bottom: 25px; text-align: justify; color: rgb(150, 0, 0); font-size: 0.75rem;" data-i18n="mop-warn">
+            Note: This is a tabletop game designed for 2 to 6 players, focused on teaching software engineering.
+        </p>
+
+        <!-- BOTÕES NA ESQUERDA (Formato e Posição Originais) -->
+        <div class="download-zone">
+            <!-- Botão desativado para representar que é um jogo de tabuleiro físico -->
+            <button class="btn-download" style="cursor: not-allowed; color: var(--text-dim); border-color: #111; background: transparent;" disabled>PHYSICAL BOARD GAME ONLY</button>
+        </div>
+
+        <!-- Limpa o float para o footer não subir -->
+        <div style="clear: both;"></div>
+    </main>
+    
+    <footer>
+        <!-- LINK EM BRANCO E SUBLINHADO -->
+        <p><a href="../updates.html" data-i18n="ver-patch-notes" style="color: var(--text-dim); text-decoration: underline;">VER PATCH NOTES DESTE PROJETO</a></p>
+    </footer>
+</div>
+<script src="../js/global-header.js"></script>
+<script src="../js/translations.js"></script>
+<script src="../js/scripts.js"></script>
+</body>
+</html>

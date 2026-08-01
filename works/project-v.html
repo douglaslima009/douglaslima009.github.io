@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="title-global">DOUGLAS LIMA.</title>
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+<div class="viewport-frame" style="position: relative;">
+    <div id="header-container"></div>
+    
+    <main>
+        <!-- CABEÇALHO (Título e Data na mesma linha) -->
+        <div class="log-header">
+            <h2 class="log-title" style="margin: 0; text-transform: none;">Project V</h2>
+            <span class="log-date">10 OUT 2025</span>
+        </div>
+        
+        <!-- BLOCO FLUTUANTE À DIREITA (Apenas a Imagem/Vídeo) -->
+        <div style="float: right; margin: 0 0 20px 30px; width: 100%; max-width: 320px;">
+            <div style="border: var(--border-solid); background: #000; padding: 5px;">
+                <img src="../images/v2.png" alt="Kalina Hansen" style="width: 100%; display: block; filter: grayscale(10%) contrast(1.1);">
+            </div>
+            <div style="border: var(--border-solid); background: #000; padding: 5px; margin-top: 10px;">
+                <img src="../images/v1.png" alt="Taranis Device" style="width: 100%; display: block; filter: grayscale(10%) contrast(1.1);">
+            </div>
+        </div>
+
+        <!-- METADADOS CRUS (Agora com i18n em cada linha) -->
+        <div style="margin-bottom: 25px; font-size: 0.8rem; line-height: 1.8;">
+            <div data-i18n="projv-meta-dev"><span style="color: var(--text-dim);">Developed by:</span> VORTEX</div>
+            <div data-i18n="projv-meta-genre"><span style="color: var(--text-dim);">Genre:</span> Narrative Adventure / Puzzle</div>
+            <div data-i18n="projv-meta-engine"><span style="color: var(--text-dim);">Engine:</span> Unity</div>
+        </div>
+
+        <p style="margin-bottom: 15px; text-align: justify;" data-i18n="projv-desc-2">
+            The player controls Kalina Hansen, a maintenance engineer sent to an abandoned research facility to restore dimensional balance using the Taranis device.
+        </p>
+        <p style="margin-bottom: 15px; text-align: justify;" data-i18n="projv-desc-3">
+            Gameplay focuses on solving spatial puzzles through a 3D holographic interface, correcting vectors and manipulating matrices to stabilize the environment.
+        </p>
+        <p style="margin-bottom: 25px; text-align: justify; color: rgb(150, 0, 0); font-size: 0.75rem;" data-i18n="projv-warn">
+            Warning: The content of the associated design compilation is in development. I am currently working on the full game, which will be released in the future. The Project V property is possessed by VORTEX.
+        </p>
+
+        <!-- BOTÕES NA ESQUERDA (Formato e Posição Originais) -->
+        <div class="download-zone">
+            <!-- Botão desativado para representar o acesso antecipado / build privada -->
+            <button class="btn-download" style="cursor: not-allowed; color: var(--text-dim); border-color: #111; background: transparent;" disabled>INTERNAL BUILD ONLY</button>
+        </div>
+
+        <!-- Limpa o float para o footer não subir -->
+        <div style="clear: both;"></div>
+    </main>
+    
+    <footer>
+        <!-- LINK EM BRANCO E SUBLINHADO -->
+        <p><a href="../updates.html" data-i18n="ver-patch-notes" style="color: var(--text-dim); text-decoration: underline;">VER PATCH NOTES DESTE PROJETO</a></p>
+    </footer>
+</div>
+<script src="../js/global-header.js"></script>
+<script src="../js/translations.js"></script>
+<script src="../js/scripts.js"></script>
+</body>
+</html>
