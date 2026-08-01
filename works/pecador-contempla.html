@@ -8,42 +8,58 @@
 </head>
 <body>
 <div class="viewport-frame" style="position: relative;">
-    <!-- O HEADER É CARREGADO AQUI -->
     <div id="header-container"></div>
     
-    <main class="grid-two-cols" style="grid-template-columns: 1.2fr 1fr;">
-        <div>
-            <div style="background-color: var(--bg-panel); border: var(--border-solid); padding: 15px; margin-bottom: 20px;">
-                <p><strong>DESENVOLVEDOR:</strong> Douglas Lima</p>
-                <p><strong>ENGINE:</strong> Unity / C#</p>
-                <p><strong>CONTEXTO:</strong> Global Game Jam 2026</p>
-                <p><strong>ESTILO:</strong> PSX retro / Shaders custom</p>
-            </div>
-            <p style="margin-bottom: 20px;" data-i18n="pecador-detailed-desc">
-                Experiência imersiva de horror. O jogador navega por ambientes gerados com atmosfera opressiva de 32-bit, enquanto enfrenta lógicas de patrulha sob malhas NavMesh.
-            </p>
-            <div class="download-zone">
-                <a href="../binaries/games/pecador_win.zip" class="btn-download" data-i18n="btn-dl-win">DOWNLOAD WIN (.ZIP)</a>
-                <a href="https://douglaslima.itch.io/" target="_blank" class="btn-download">ITCH.IO →</a>
-            </div>
+    <main>
+        <!-- CABEÇALHO (Título e Data na mesma linha) -->
+        <div class="log-header">
+            <h2 class="log-title" style="margin: 0; text-transform: none;">Pecador, Contempla.</h2>
+            <span class="log-date">08 FEV 2026</span>
         </div>
         
-        <div class="media-gallery">
-            <div class="media-frame">
-                <div class="video-container">
-                    <iframe src="https://www.youtube.com/embed/ID_AQUI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                </div>
-            </div>
-            <div class="media-frame">
-                <img src="../img/pecador_gameplay_loop.gif" alt="Gameplay Loop">
+        <!-- BLOCO FLUTUANTE À DIREITA (Apenas a Imagem/Vídeo) -->
+        <div style="float: right; margin: 0 0 20px 30px; width: 100%; max-width: 320px;">
+            <div style="border: var(--border-solid); background: #000; padding: 5px;">
+                <img src="../images/pc1.png" alt="Gameplay" style="width: 100%; display: block; filter: grayscale(10%) contrast(1.1);">
             </div>
         </div>
+
+    <!-- METADADOS CRUS (Agora com i18n em cada linha) -->
+        <div style="margin-bottom: 25px; font-size: 0.8rem; line-height: 1.8;">
+            <div data-i18n="pecador-meta-dev"><span style="color: var(--text-dim);">Developed by:</span> Douglas Lima</div>
+            <div data-i18n="pecador-meta-genre"><span style="color: var(--text-dim);">Genre:</span> FPS / Psychological Horror</div>
+            <div data-i18n="pecador-meta-engine"><span style="color: var(--text-dim);">Engine:</span> Unity</div>
+        </div>
+
+        <!-- DESCRIÇÃO FLUIDA -->
+        <p style="margin-bottom: 15px; text-align: justify; font-style: italic;" data-i18n="pecador-desc-1">
+            Wake up. They have something to show you.
+        </p>
+        <p style="margin-bottom: 15px; text-align: justify;" data-i18n="pecador-desc-2">
+            A procedural psychological horror FPS created in under 72 hours for Global Game Jam 2026.
+        </p>
+        <p style="margin-bottom: 15px; text-align: justify;" data-i18n="pecador-desc-3">
+            Features active tactical AI systems under NavMesh and immersive 3D audio, using custom PSX shaders to emulate retro 32-bit aesthetics.
+        </p>
+        <p style="margin-bottom: 25px; text-align: justify; color: var(--text-dim); font-size: 0.75rem;" data-i18n="pecador-warn">
+            Content warning: Atmospheric horror and loud noises.
+        </p>
+
+        <!-- BOTÕES NA ESQUERDA (Formato e Posição Originais) -->
+        <div class="download-zone">
+            <a href="../bin/games/Pecador, Contempla.zip" class="btn-download" data-i18n="btn-dl-win">DOWNLOAD WIN (.ZIP)</a>
+            <a href="https://douglaslima.itch.io/" target="_blank" class="btn-download">ITCH.IO →</a>
+        </div>
+
+        <!-- Limpa o float para o footer não subir -->
+        <div style="clear: both;"></div>
     </main>
+    
     <footer>
-        <p><a href="../updates.html" data-i18n="ver-patch-notes">VER PATCH NOTES DESTE PROJETO</a></p>
+        <!-- LINK EM BRANCO E SUBLINHADO -->
+        <p><a href="../updates.html" data-i18n="ver-patch-notes" style="color: var(--text-accent); text-decoration: underline;">VER PATCH NOTES DESTE PROJETO</a></p>
     </footer>
 </div>
-<!-- CAMINHOS VOLTANDO UMA PASTA -->
 <script src="../js/global-header.js"></script>
 <script src="../js/translations.js"></script>
 <script src="../js/scripts.js"></script>

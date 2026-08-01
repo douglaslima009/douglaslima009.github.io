@@ -57,6 +57,26 @@ const translations = {
         "works-desc-xr": "Prototipagem de Gameplay",
         "works-desc-yews": "Serviço de Backend",
 
+        //Obras - Pecador, Contempla
+        "pecador-meta-dev": "<span style='color: var(--text-dim);'>Desenvolvedor:</span> Douglas Lima",
+        "pecador-meta-collab": "<span style='color: var(--text-dim);'>Colaboração com:</span> Douglas Lima",
+        "pecador-meta-genre": "<span style='color: var(--text-dim);'>Gênero:</span> FPS / Terror Psicológico",
+        "pecador-meta-engine": "<span style='color: var(--text-dim);'>Engine:</span> Unity",
+        "pecador-desc-1": "Acorde. Eles têm algo para te mostrar.",
+        "pecador-desc-2": "Um FPS de terror psicológico procedural criado em menos de 72 horas para Global Game Jam 2026.",
+        "pecador-desc-3": "Apresenta sistemas ativos de IA tática sob NavMesh e áudio 3D imersivo, utilizando shaders PSX customizados para emular a estética retrô de 32-bit.",
+        "pecador-warn": "Aviso de conteúdo: Terror atmosférico e ruídos altos.",
+
+        //Obras - ZALA
+        "zala-meta-dev": "<span style='color: var(--text-dim);'>Desenvolvedor:</span> Douglas Lima",
+        "zala-meta-collab": "<span style='color: var(--text-dim);'>Colaboração com:</span> Douglas Lima",
+        "zala-meta-genre": "<span style='color: var(--text-dim);'>Gênero:</span> FPS / TPS / Tactical-Psychological",
+        "zala-meta-engine": "<span style='color: var(--text-dim);'>Engine:</span> Unreal Engine",
+        "zala-desc-1": "Log do Sistema: PROTOCOLO DE DEPRECIAÇÃO DE ATIVOS INICIADO. Nenhuma assinatura acústica detectada. Interferência eletromagnética em níveis críticos.",
+        "zala-desc-2": "ZALA é um FPS/TPS \"tático-psicológico\" centrado em guerra eletrônica assimétrica. Em um campo de batalha desumanizado por conglomerados militares, você não opera armas convencionais. Você comanda frequências, jammers direcionais e arrays de combate projetados para caçar e fritar conexões inimigas.",
+        "zala-desc-3": "Aqui, o silêncio é absoluto, pesado e opressor.",
+        "zala-warn": "Aviso de conteúdo: Terror atmosférico intenso, ruídos altos e imagens perturbadoras.",
+
         // Registros
         "registry-all-title": "DIÁRIO DE DESENVOLVIMENTO",
         "log-1": "Estrutura modular plana, novos estilos tipográficos compactos e tags dinâmicas acopladas.",
@@ -71,8 +91,9 @@ const translations = {
         "miscellaneous-subtitle": "Downloads diretos de recursos locais livres de rastreadores.",
 
         // Contato
-        "contact-title": "CONTATO & CANAIS",
-        "contact-p1": "Se o seu projeto demanda engenharia de sistemas ou atmosfera complexa, entre em contato.",
+        "contact-title": "CONTATO",
+        "contact-p1": "Sinta-se à vontade para me enviar uma mensagem em <a href='mailto:douglaslima0929@gmail.com' style='color: var(--text-primary); text-decoration: underline;'>douglaslima0929@gmail.com</a>!",
+        "contact-p3": "Para networking, atualizações profissionais e discussões sobre engenharia, você pode me encontrar no <a href='https://linkedin.com/in/douglaslima' target='_blank' style='color: var(--text-primary); text-decoration: underline;'>LinkedIn</a>.",
 
         // Obras Internas (Pecador, Contempla)
         "pecador-detailed-desc": "Experiência imersiva de horror. O jogador navega por ambientes gerados com atmosfera opressiva de 32-bit, enquanto enfrenta lógicas de patrulha sob malhas NavMesh.",
@@ -115,16 +136,16 @@ const translations = {
         "about-manifesto-p1": "Douglas Lima Menezes, professionally known as \"createdbydouglaslima\", is an independent game developer and software engineer from Brazil.",
         "about-manifesto-p2": "Focusing on building worlds, systems, and stories, Douglas spends most of his time developing projects that involve immersive atmospheres, psychological suspense, and experimental mechanics, always striving to balance creative direction with rigorous technical execution.",
         "about-exp-title": "EXPERIENCE",
-        "about-exp-1": "<span><strong>LearningLab</strong> - Lead Game Designer</span><span class='time-ago'>2025 - PRESENT</span>",
-        "about-exp-2": "<span><strong>VORTEX UFC</strong> - Lead Game Director</span><span class='time-ago'>2025 - PRESENT</span>",
+        "about-exp-1": "<span><strong>LearningLab</strong> - Lead Game Designer</span><span class='time-ago'>2025 - PRES</span>",
+        "about-exp-2": "<span><strong>VORTEX UFC</strong> - Lead Game Director</span><span class='time-ago'>2025 - PRES</span>",
         "about-exp-4": "<span><strong>AAA Studio (NDA)</strong> - QA & Technical Game Tester</span><span class='time-ago'>2025</span>",
         "about-exp-3": "<span><strong>YEEZY (USA)</strong> - Junior Backend Engineer</span><span class='time-ago'>2024</span>",
         "about-exp-5": "<span><strong>Bionic Productions</strong> - Team Lead & Software Engineer</span><span class='time-ago'>2023</span>",
         "about-exp-6": "<span><strong>Ecatege Contabilidade & Serviços</strong> - Full-Stack Software Developer Internship</span><span class='time-ago'>2022</span>",
-        "about-exp-7": "<span><strong>AAA Studio (NDA)</strong> - QA & Technical Game Tester</span><span class='time-ago'>2026 - PRESENT</span>",
-        "about-exp-8": "<span><strong>CENTEC</strong> - Lead Game Designer</span><span class='time-ago'>2026 - PRESENT</span>",
+        "about-exp-7": "<span><strong>AAA Studio (NDA)</strong> - QA & Technical Game Tester</span><span class='time-ago'>2026 - PRES</span>",
+        "about-exp-8": "<span><strong>CENTEC</strong> - Lead Game Designer</span><span class='time-ago'>2026 - PRES</span>",
         "about-edu-title": "EDUCATION",
-        "about-edu-1": "<span><strong>Federal University of Ceará</strong> - B.S. in Software Engineering</span><span class='time-ago'>2023 - PRESENT</span>",
+        "about-edu-1": "<span><strong>Federal University of Ceará</strong> - B.S. in Software Engineering</span><span class='time-ago'>2023 - PRES</span>",
         "about-edu-2": "<span><strong>EEEP Walquer Cavalcante Maia</strong> - Technical High School Degree in IT</span><span class='time-ago'>2020 - 2022</span>",
         "about-edu-3": "<span><strong>Voxy</strong> - English Proficiency Certificate</span><span class='time-ago'>2026</span>",
         "about-edu-4": "<span><strong>Epic Games</strong> - Game Development and Prototyping</span><span class='time-ago'>2025</span>",
@@ -141,6 +162,27 @@ const translations = {
         "works-desc-xr": "Gameplay Prototyping",
         "works-desc-yews": "Backend Service",
 
+        // Works - Pecador, Contempla
+        "pecador-meta-dev": "<span style='color: var(--text-dim);'>Developed by:</span> Douglas Lima",
+        "pecador-meta-collab": "<span style='color: var(--text-dim);'>Collaboration with:</span> Douglas Lima",
+        "pecador-meta-genre": "<span style='color: var(--text-dim);'>Genre:</span> FPS / Psychological Horror",
+        "pecador-meta-engine": "<span style='color: var(--text-dim);'>Engine:</span> Unity",
+        "pecador-desc-1": "Wake up. They have something to show you.",
+        "pecador-desc-2": "A procedural psychological horror FPS created in under 72 hours for Global Game Jam 2026.",
+        "pecador-desc-3": "Features active tactical AI systems under NavMesh and immersive 3D audio, using custom PSX shaders to emulate retro 32-bit aesthetics.",
+        "pecador-warn": "Content warning: Atmospheric horror and loud noises.",
+
+        // Works - ZALA
+        "zala-meta-dev": "<span style='color: var(--text-dim);'>Developed by:</span> Douglas Lima",
+        "zala-meta-collab": "<span style='color: var(--text-dim);'>Collaboration with:</span> Douglas Lima",
+        "zala-meta-genre": "<span style='color: var(--text-dim);'>Genre:</span> FPS / TPS / Tactical-Psychological",
+        "zala-meta-engine": "<span style='color: var(--text-dim);'>Engine:</span> Unreal Engine",
+        "zala-desc-1": "SYSTEM LOG: ASSET DEPRECIATION PROTOCOL INITIATED. No acoustic signature detected. Electromagnetic interference at critical thresholds.",
+        "zala-desc-2": "ZALA is a \"tactical-psychological\" FPS/TPS centered around asymmetric electronic warfare. In a battlefield dehumanized by military conglomerates, you do not operate conventional firearms. You command frequencies, directional jammers, and combat arrays engineered to hunt and fry enemy connections.",
+        "zala-desc-3": "Here, silence is absolute, heavy, and oppressive.",
+        "zala-warn": "Content warning: Intense atmospheric horror, loud noises, and disturbing imagery.",
+        
+
         // Registry
         "registry-all-title": "DEVELOPMENT LOGS",
         "log-1": "Flat modular structure, new compact typographic styles, and dynamic tags attached.",
@@ -155,8 +197,10 @@ const translations = {
         "miscellaneous-subtitle": "Direct downloads of local, tracker-free resources.",
 
         // Contact
-        "contact-title": "CONTACT & CHANNELS",
-        "contact-p1": "If your project demands systems engineering or complex atmosphere, reach out.",
+        // Contact
+        "contact-title": "CONTACT",
+        "contact-p1": "Feel free to send me a message at <a href='mailto:douglaslima0929@gmail.com' style='color: var(--text-primary); text-decoration: underline;'>douglaslima0929@gmail.com</a>!",
+        "contact-p3": "For professional networking, updates, and engineering discussions, you can find me over on my <a href='https://linkedin.com/in/douglaslima' target='_blank' style='color: var(--text-primary); text-decoration: underline;'>LinkedIn</a> page.",
 
         // Internal Works (Pecador, Contempla)
         "pecador-detailed-desc": "Immersive horror experience. The player navigates generated environments with an oppressive 32-bit atmosphere while facing dynamic patrol logic under NavMesh.",
