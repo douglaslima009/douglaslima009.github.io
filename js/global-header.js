@@ -2,7 +2,7 @@
 (function() {
     // Verifica a URL atual para injetar o "../" caso esteja em qualquer subpasta
     const url = window.location.href;
-    const isInnerPage = url.includes('/works/') || url.includes('/registry/') || url.includes('/updates/');
+   const isInnerPage = url.includes('/works/') || url.includes('/registry/') || url.includes('/updates/') || url.includes('/misc/');
     const prefix = isInnerPage ? '../' : '';
 
     const headerHTML = `
@@ -25,11 +25,10 @@
                         <span class="eq-bar"></span>
                         <span class="eq-bar"></span>
                     </div>
-                    <!-- Usa a nova classe unificada sys-btn -->
                     <button id="btn-sys-audio" class="sys-btn">[ PLAY ]</button>
                 </div>
 
-                <!-- Botão de Tradução (Usa a exata mesma classe sys-btn) -->
+                <!-- Botão de Tradução -->
                 <button id="lang-toggle" class="sys-btn"></button>
             </div>
             
@@ -47,7 +46,7 @@
     
     document.getElementById('header-container').innerHTML = headerHTML;
     
-    // SomaFM Def Con)
+    // Configuração do Áudio
     const audioBtn = document.getElementById('btn-sys-audio');
     const equalizer = document.getElementById('sys-equalizer');
     
@@ -56,27 +55,62 @@
         window.sysRadio.volume = 0.3; 
     }
 
-    if (sessionStorage.getItem('sysRadioState') === 'playing') {
-        window.sysRadio.play().then(() => {
+    // Função para atualizar os visuais (Equalizador e Botão)
+    function updateUI(isPlaying) {
+        if (isPlaying) {
             audioBtn.innerText = '[ STOP ]';
             equalizer.classList.add('playing');
-        }).catch(() => {
-            sessionStorage.setItem('sysRadioState', 'paused');
-        });
-    }
-
-    audioBtn.addEventListener('click', () => {
-        if (window.sysRadio.paused) {
-            window.sysRadio.play();
-            audioBtn.innerText = '[ STOP ]';
-            equalizer.classList.add('playing');
-            sessionStorage.setItem('sysRadioState', 'playing');
         } else {
-            window.sysRadio.pause();
             audioBtn.innerText = '[ PLAY ]';
             equalizer.classList.remove('playing');
+        }
+    }
+
+    // Função que tenta dar o play e lida com bloqueios do navegador
+    function attemptPlay() {
+        if (sessionStorage.getItem('sysRadioState') === 'playing') {
+            window.sysRadio.play().then(() => {
+                updateUI(true);
+            }).catch(() => {
+                // Se o navegador bloquear o autoplay pelo botão voltar, 
+                // a UI fica pausada esperando a interação do usuário.
+                updateUI(false); 
+            });
+        }
+    }
+
+    // 1. Tenta rodar ao carregar a página normalmente
+    attemptPlay();
+
+    // 2. Controle manual no botão
+    audioBtn.addEventListener('click', () => {
+        if (window.sysRadio.paused) {
+            sessionStorage.setItem('sysRadioState', 'playing');
+            attemptPlay();
+        } else {
             sessionStorage.setItem('sysRadioState', 'paused');
+            window.sysRadio.pause();
+            updateUI(false);
         }
     });
+
+    // 3. SOLUÇÃO PARA O BOTÃO VOLTAR (BFCache)
+    // Tenta forçar o play assim que a página é descongelada
+    window.addEventListener('pageshow', () => {
+        setTimeout(attemptPlay, 100);
+    });
+
+    // 4. A ARMADILHA (Recuperação de Interação)
+    // Se o usuário clicar em "Voltar" e o navegador forçar o bloqueio do som,
+    // nós ficamos observando. No primeiro clique que ele der na tela, o som volta.
+    const resumeOnInteraction = () => {
+        if (sessionStorage.getItem('sysRadioState') === 'playing' && window.sysRadio.paused) {
+            attemptPlay();
+        }
+    };
+
+    window.addEventListener('click', resumeOnInteraction);
+    window.addEventListener('keydown', resumeOnInteraction);
+    window.addEventListener('touchstart', resumeOnInteraction);
 
 })();
