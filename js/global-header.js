@@ -2,7 +2,7 @@
 (function() {
     // Verifica a URL atual para injetar o "../" caso esteja em qualquer subpasta
     const url = window.location.href;
-   const isInnerPage = url.includes('/works/') || url.includes('/registry/') || url.includes('/updates/') || url.includes('/misc/');
+   const isInnerPage = url.includes('/catalogue/') || url.includes('/registry/') || url.includes('/updates/') || url.includes('/misc/');
     const prefix = isInnerPage ? '../' : '';
 
     const headerHTML = `
@@ -35,7 +35,7 @@
             <nav class="nav-links">
                 <a href="${prefix}index.html" data-i18n="nav-home">HOME</a>
                 <a href="${prefix}about.html" data-i18n="nav-about">SOBRE</a>
-                <a href="${prefix}works.html" data-i18n="nav-works">OBRAS</a>
+                <a href="${prefix}catalogue.html" data-i18n="nav-catalogue">CATÁLOGO</a>
                 <a href="${prefix}registry.html" data-i18n="nav-registry">REGISTROS</a>
                 <a href="${prefix}updates.html" data-i18n="nav-updates">UPDATES</a>
                 <a href="${prefix}miscellaneous.html" data-i18n="nav-miscellaneous">MISCELÂNEAS</a>

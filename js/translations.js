@@ -4,7 +4,7 @@ const translations = {
         // Navegação Global
         "nav-home": "HOME",
         "nav-about": "SOBRE",
-        "nav-works": "OBRAS",
+        "nav-catalogue": "CATÁLOGO",
         "nav-registry": "REGISTROS",
         "nav-updates": "UPDATES",
         "nav-miscellaneous": "MISCELÂNEAS",
@@ -14,12 +14,12 @@ const translations = {
 
         // Home
         "home-intro": "Bem-vindo ao meu arquivo. Construo mundos, sistemas e histórias. A maior parte dos meus projetos envolve atmosferas imersivas, suspenses psicológicos e mecânicas experimentais. Sinta-se à vontade para explorar o catálogo.",
-        "section-works": "CATÁLOGO",
-        "featured-title": "SYSTEM_FEATURED: PECADOR, CONTEMPLA.",
-        "featured-desc": "FPS procedural de terror psicológico com estética retrô 32-bit (PSX), gerado em ciclo intensivo de 72 horas para a Global Game Jam 2026. Sistemas ativos de IA tática sob NavMesh e áudio tridimensional imersivo.",
+        "section-catalogue": "CATÁLOGO",
+        "featured-title": "SYSTEM_FEATURED: ZALA",
+        "featured-desc": "FPS/TPS \"tático-psicológico\" focado em guerra eletrônica assimétrica. Você não opera armas convencionais. Você comanda frequências, jammers direcionais e matrizes de combate em um campo de batalha onde o silêncio é absoluto e opressor.",
         "featured-enter": "ENTRAR NO ARQUIVO",
         "section-registry": "ÚLTIMOS REGISTROS",
-        "section-updates": "PATCH NOTES",
+        "section-updates": "NOTAS DE ATUALIZAÇÃO",
         "home-log-3": "Conserto estrutural e automação finalizada",
         "home-log-2": "Apresentação acadêmica sobre Redes e Jogos",
 
@@ -50,14 +50,14 @@ const translations = {
         "about-edu-8": "<span><strong>AWS Academy Graduate</strong> - Fundamentos da Nuvem</span><span class='time-ago'>2022</span>",
         "about-edu-9": "<span><strong>Olimpíada Brasileira de Astronomia - Level 3</strong> - Medalha de Bronze</span><span class='time-ago'>2022</span>",
 
-        // Obras
-        "works-all-title": "TODAS AS OBRAS",
-        "works-desc-pecador": "FPS Experimental de Horror",
-        "works-desc-v": "Jogo Narrativo de Quebra-Cabeça",
-        "works-desc-xr": "Prototipagem de Gameplay",
-        "works-desc-yews": "Serviço de Backend",
+        // CATÁLOGO
+        "catalogue-all-title": "TODAS OS JOGOS",
+        "catalogue-desc-pecador": "FPS Experimental de Horror",
+        "catalogue-desc-v": "Jogo Narrativo de Quebra-Cabeça",
+        "catalogue-desc-xr": "Prototipagem de Gameplay",
+        "catalogue-desc-yews": "Serviço de Backend",
 
-        //Obras - Pecador, Contempla
+        //CATÁLOGO - Pecador, Contempla
         "pecador-meta-dev": "<span style='color: var(--text-dim);'>Desenvolvedor:</span> Douglas Lima",
         "pecador-meta-collab": "<span style='color: var(--text-dim);'>Colaboração com:</span> Douglas Lima",
         "pecador-meta-genre": "<span style='color: var(--text-dim);'>Gênero:</span> FPS / Horror",
@@ -66,7 +66,7 @@ const translations = {
         "pecador-desc-3": "Apresenta sistemas ativos de IA tática sob NavMesh e áudio 3D imersivo, utilizando shaders PSX customizados para emular a estética retrô de 32-bit.",
         "pecador-warn": "Aviso de conteúdo: Terror atmosférico e luzes piscando.",
 
-        //Obras - ZALA
+        //CATÁLOGO - ZALA
         "zala-meta-dev": "<span style='color: var(--text-dim);'>Desenvolvedor:</span> Douglas Lima",
         "zala-meta-collab": "<span style='color: var(--text-dim);'>Colaboração com:</span> Douglas Lima",
         "zala-meta-genre": "<span style='color: var(--text-dim);'>Gênero:</span> FPS / TPS / Tático-Psicológico",
@@ -76,7 +76,7 @@ const translations = {
         "zala-desc-3": "Aqui, o silêncio é absoluto, pesado e opressor.",
         "zala-warn": "Aviso de conteúdo: Terror atmosférico, ruídos altos e imagens perturbadoras.",
 
-        //Obras - V
+        //CATÁLOGO - V
         "projv-meta-dev": "<span style='color: var(--text-dim);'>Desenvolvedor:</span> VORTEX",
         "projv-meta-genre": "<span style='color: var(--text-dim);'>Gênero:</span> Aventura Narrativa / Quebra-Cabeça",
         "projv-meta-engine": "<span style='color: var(--text-dim);'>Engine:</span> Unity",
@@ -85,7 +85,7 @@ const translations = {
         "projv-desc-3": "A jogabilidade foca em resolver quebra-cabeças espaciais através de uma interface holográfica 3D, corrigindo vetores e manipulando matrizes para estabilizar o ambiente.",
         "projv-warn": "Aviso: O conteúdo da compilação de design associada está em desenvolvimento. Atualmente, estou trabalhando no jogo completo, que será lançado no futuro. A propriedade Project V é de posse da VORTEX.",
 
-        //Obras - MOP
+        //CATÁLOGO - MOP
         "mop-meta-dev": "<span style='color: var(--text-dim);'>Desenvolvido por:</span> LearningLab / LLabGames",
         "mop-meta-genre": "<span style='color: var(--text-dim);'>Gênero:</span> Estratégia / Educacional",
         "mop-meta-format": "<span style='color: var(--text-dim);'>Formato:</span> Jogo de Tabuleiro Físico",
@@ -161,12 +161,12 @@ const translations = {
         // =========================================================
         "log-focus-title": "Uma transição para mundos interativos.",
         "log-focus-h1": "INTRODUÇÃO",
-        "log-focus-p1": "Se você tem acompanhado este arquivo, deve ter notado que a seção OBRAS encolheu. Eu decidi remover os repositórios corporativos e sistemas de gestão web dali. O motivo é simples: eu queria transformar o catálogo em uma vitrine puramente focada em artefatos de jogos e experiências interativas.",
+        "log-focus-p1": "Se você tem acompanhado este arquivo, deve ter notado que a seção \"CATÁLOGO\" encolheu. Eu decidi remover os repositórios corporativos e sistemas de gestão web dali. O motivo é simples: eu queria transformar o catálogo em uma vitrine puramente focada em artefatos de jogos e experiências interativas.",
         "log-focus-h2": "DA ENGENHARIA AOS JOGOS",
         "log-focus-p2": "Não me entenda mal, meu tempo como estudante de Engenharia de Software e desenvolvedor Full-Stack foi essencial. Arquitetar o backend para plataformas de alto tráfego como a da YEEZY, ou construir ferramentas do zero na Ecatege e Bionic, me deu uma disciplina técnica absurda. Quando você passa meses escalando bancos de dados e escrevendo APIs, você aprende a não ter medo de código complexo.",
         "log-focus-p3": "A questão é que o meu objetivo final sempre foi usar essa engenharia para construir mundos. A programação, para mim, só atinge o seu ápice de verdade quando cruza com direção narrativa, atmosferas pesadas e mecânicas experimentais.",
         "log-focus-h3": "O FUTURO",
-        "log-focus-p4": "A partir de agora, meu foco está 100% ancorado na direção e engenharia de jogos, liderando projetos desde o papel até versões finais. Os trabalhos corporativos vão continuar listados na aba \"SOBRE\" e \"REGISTROS\" para quem se interessar pelo meu background, mas a aba \"OBRAS\" agora é o seu terminal de acesso direto para os mundos que estou criando.",
+        "log-focus-p4": "A partir de agora, meu foco está 100% ancorado na direção e engenharia de jogos, liderando projetos desde o papel até versões finais. Os trabalhos corporativos vão continuar listados na aba \"SOBRE\" e \"REGISTROS\" para quem se interessar pelo meu background, mas a aba \"CATÁLOGO\" agora é o seu terminal de acesso direto para os mundos que estou criando.",
 
         // =========================================================
         // LOG 6: SKILLS & CURSOS (log6.html)
@@ -231,7 +231,32 @@ const translations = {
         "log-ecatege-p2": "Nós usamos a stack MERN clássica (MongoDB, Express, React e Node.js). Atuar como desenvolvedor full-stack me obrigou a pular do planejamento de esquemas no banco de dados direto para o alinhamento de componentes no frontend no mesmo dia. Liderar a equipe durante esse processo foi estressante, mas foi a melhor escola de desenvolvimento real que eu poderia ter.",
 
         // Updates
-        "updates-all-title": "NOTAS DE ATUALIZAÇÃO DE SISTEMAS",
+        "updates-all-title": "NOTAS DE ATUALIZAÇÃO",
+        // =========================================================
+        // UPDATES GERAIS
+        // =========================================================
+        "updates-all-title": "NOTAS DE ATUALIZAÇÃO",
+        "btn-back-work": "[ IR PARA O JOGO ]",
+
+        // Update Pecador 1.0.0
+        "update-pecador-100-h1": "GLOBAL GAME JAM RELEASE",
+        "update-pecador-100-p1": "Primeira compilação final gerada para submissão na Global Game Jam 2026. Todos os sistemas centrais estão funcionais e a build foi encapsulada com os executáveis de Windows. O ciclo de gameplay foi finalizado às 23:00, restando apenas polimentos de shaders.",
+        "update-pecador-100-b1": "- [ADD] Geração procedural de corredores e salas anexas implementada com sucesso.",
+        "update-pecador-100-b2": "- [ADD] Shaders de estética retrô 32-bit (PSX) compilados e aplicados à câmera principal.",
+        "update-pecador-100-b3": "- [ADD] Sistema de áudio 3D e filtros de distorção atrelados à sanidade do jogador.",
+
+        // Update Pecador 1.0.2
+        "update-pecador-102-h1": "AUDIO FIXES & NAVMESH OPTIMIZATION",
+        "update-pecador-102-p1": "Este hotfix aborda problemas de colisão sonora relatados durante a navegação em espaços confinados. O cálculo de oclusão de áudio foi reescrito para respeitar as malhas de colisão da arquitetura e a IA agora perde o rastro sonoro se o jogador estiver isolado em áreas herméticas.",
+        "update-pecador-102-b1": "- [FIX] Filtro de atenuação espacial aplicado aos passos do perseguidor.",
+        "update-pecador-102-b2": "- [FIX] Recálculo das bordas de NavMesh próximas às paredes da área principal.",
+
+        // Update ZALA 0.1.5
+        "update-zala-h1": "AUDIO ENGINE & UI DISTORTION",
+        "update-zala-p1": "Atualização de ambiente focada nos testes de estresse da interface e consolidação da física de sinais na Unreal Engine 5. A mecânica de Interseção de Sinais agora calcula as frequências corretamente quando dois jammers de esquadrão se sobrepõem.",
+        "update-zala-b1": "- [SYS] Lógica customizada de física de sinais (C++) implementada na arquitetura base.",
+        "update-zala-b2": "- [TEST] Testes de estresse da distorção de UI (Body Horror Digital) aplicados.",
+        "update-zala-b3": "- [SYNC] Primeiros arquivos de MoCap validados e sincronizados com a malha dos MetaHumans.",
 
         // Miscelâneas
         "miscellaneous-title": "ARQUIVO DE MISCELÂNEAS",
@@ -251,7 +276,7 @@ const translations = {
         "contact-p1": "Sinta-se à vontade para me enviar uma mensagem em <a href='mailto:douglaslima0929@gmail.com' style='color: var(--text-primary); text-decoration: underline;'>douglaslima0929@gmail.com</a>!",
         "contact-p3": "Para networking, atualizações profissionais e discussões sobre engenharia, você pode me encontrar no <a href='https://linkedin.com/in/createdbydouglaslima' target='_blank' style='color: var(--text-primary); text-decoration: underline;'>LinkedIn</a>.",
 
-        // Obras Internas (Pecador, Contempla)
+        // Jogos Internas (Pecador, Contempla)
         "pecador-detailed-desc": "Experiência imersiva de horror. O jogador navega por ambientes gerados com atmosfera opressiva de 32-bit, enquanto enfrenta lógicas de patrulha sob malhas NavMesh.",
         "btn-dl-win": "DOWNLOAD WIN (.ZIP)",
         "ver-patch-notes": "VER PATCH NOTES DESTE PROJETO",
@@ -268,7 +293,7 @@ const translations = {
         // Global Navigation
         "nav-home": "HOME",
         "nav-about": "ABOUT",
-        "nav-works": "WORKS",
+        "nav-catalogue": "CATALOGUE",
         "nav-registry": "REGISTRY",
         "nav-updates": "UPDATES",
         "nav-miscellaneous": "MISCELLANEOUS",
@@ -278,9 +303,9 @@ const translations = {
 
         // Home
         "home-intro": "Welcome to my archive. I build worlds, systems, and stories. Most of my projects involve immersive atmospheres, psychological suspense, and experimental mechanics. Feel free to explore the catalog.",
-        "section-works": "CATALOGUE",
-        "featured-title": "SYSTEM_FEATURED: PECADOR, CONTEMPLA.",
-        "featured-desc": "Procedural psychological horror FPS with 32-bit retro aesthetics (PSX), developed in an intensive 72-hour cycle for the Global Game Jam 2026. Active tactical AI systems under NavMesh and immersive 3D audio.",
+        "section-catalogue": "CATALOGUE",
+        "featured-title": "SYSTEM_FEATURED: ZALA",
+        "featured-desc": "Tactical-psychological FPS/TPS centered around asymmetric electronic warfare. You do not operate conventional firearms. You command frequencies, directional jammers, and combat arrays in a battlefield where silence is absolute and oppressive.",
         "featured-enter": "ACCESS ARCHIVE",
         "section-registry": "LATEST LOGS",
         "section-updates": "PATCH NOTES",
@@ -311,14 +336,14 @@ const translations = {
         "about-edu-8": "<span><strong>AWS Academy Graduate</strong> - Cloud Fundamentals</span><span class='time-ago'>2022</span>",
         "about-edu-9": "<span><strong>Brazilian Astronomy Olympiad - Level 3</strong> - Bronze Medal</span><span class='time-ago'>2022</span>",
 
-        // Works
-        "works-all-title": "ALL WORKS",
-        "works-desc-pecador": "Experimental Horror FPS",
-        "works-desc-v": "Narrative Puzzle Game",
-        "works-desc-xr": "Gameplay Prototyping",
-        "works-desc-yews": "Backend Service",
+        // Catalogue
+        "catalogue-all-title": "ALL GAMES",
+        "catalogue-desc-pecador": "Experimental Horror FPS",
+        "catalogue-desc-v": "Narrative Puzzle Game",
+        "catalogue-desc-xr": "Gameplay Prototyping",
+        "catalogue-desc-yews": "Backend Service",
 
-        // Works - Pecador, Contempla
+        // Catalogue - Pecador, Contempla
         "pecador-meta-dev": "<span style='color: var(--text-dim);'>Developed by:</span> Douglas Lima",
         "pecador-meta-collab": "<span style='color: var(--text-dim);'>Collaboration with:</span> Douglas Lima",
         "pecador-meta-genre": "<span style='color: var(--text-dim);'>Genre:</span> FPS / Horror",
@@ -327,7 +352,7 @@ const translations = {
         "pecador-desc-3": "Features active tactical AI systems under NavMesh and immersive 3D audio, using custom PSX shaders to emulate retro 32-bit aesthetics.",
         "pecador-warn": "Content warning: Atmospheric horror and flashing lights.",
 
-        // Works - ZALA
+        // Catalogue - ZALA
         "zala-meta-dev": "<span style='color: var(--text-dim);'>Developed by:</span> Douglas Lima",
         "zala-meta-collab": "<span style='color: var(--text-dim);'>Collaboration with:</span> Douglas Lima",
         "zala-meta-genre": "<span style='color: var(--text-dim);'>Genre:</span> FPS / TPS / Tactical-Psychological",
@@ -337,7 +362,7 @@ const translations = {
         "zala-desc-3": "Here, silence is absolute, heavy, and oppressive.",
         "zala-warn": "Content warning: Atmospheric horror, loud noises, and disturbing imagery.",
 
-        // Works - V
+        // Catalogue - V
         "projv-meta-dev": "<span style='color: var(--text-dim);'>Developed by:</span> VORTEX",
         "projv-meta-genre": "<span style='color: var(--text-dim);'>Genre:</span> Narrative Adventure / Puzzle",
         "projv-meta-engine": "<span style='color: var(--text-dim);'>Engine:</span> Unity",
@@ -346,7 +371,7 @@ const translations = {
         "projv-desc-3": "Gameplay focuses on solving spatial puzzles through a 3D holographic interface, correcting vectors and manipulating matrices to stabilize the environment. Currently, only the introductory scene in Kalina's room is fully playable within the engine, setting the stage for encounters with the mysterious entity known as Elias, or 'The Fractured'.",
         "projv-warn": "Warning: The content of the associated design compilation is in development. I am currently working on the full game, which will be released in the future. The Project V property is possessed by VORTEX.",
 
-        // Works - MOP
+        // Catalogue - MOP
         "mop-meta-dev": "<span style='color: var(--text-dim);'>Developed by:</span> LearningLab / LLabGames",
         "mop-meta-genre": "<span style='color: var(--text-dim);'>Genre:</span> Strategy / Educational",
         "mop-meta-format": "<span style='color: var(--text-dim);'>Format:</span> Physical Board Game",
@@ -421,12 +446,12 @@ const translations = {
         // =========================================================
         "log-focus-title": "A pivot to interactive worlds.",
         "log-focus-h1": "INTRODUCTION",
-        "log-focus-p1": "If you've been following this archive, you might have noticed that the WORKS section shrank. I decided to remove the corporate repositories and web management systems from there. The reason is simple: I wanted to transform the catalog into a showcase purely focused on game artifacts and interactive experiences.",
+        "log-focus-p1": "If you've been following this archive, you might have noticed that the CATALOGUE section shrank. I decided to remove the corporate repositories and web management systems from there. The reason is simple: I wanted to transform the catalog into a showcase purely focused on game artifacts and interactive experiences.",
         "log-focus-h2": "FROM ENGINEERING TO GAMES",
         "log-focus-p2": "Don't get me wrong, my time as a Software Engineering student and Full-Stack developer was essential. Architecting the backend for high-traffic platforms like YEEZY, or building tools from scratch at Ecatege and Bionic, gave me an absurd technical discipline. When you spend months scaling databases and writing APIs, you learn not to fear complex code.",
         "log-focus-p3": "The thing is, my end goal has always been to use this engineering to build worlds. Programming, to me, only truly reaches its peak when it intersects with narrative direction, heavy atmospheres, and experimental mechanics.",
         "log-focus-h3": "THE FUTURE",
-        "log-focus-p4": "From now on, my focus is 100% anchored in game direction and engineering, leading projects from paper to final versions. Corporate work will remain listed under the \"ABOUT\" and \"REGISTRY\" tabs for those interested in my background, but the \"WORKS\" tab is now your direct access terminal to the worlds I'm creating.",
+        "log-focus-p4": "From now on, my focus is 100% anchored in game direction and engineering, leading projects from paper to final versions. Corporate work will remain listed under the \"ABOUT\" and \"REGISTRY\" tabs for those interested in my background, but the \"CATALOGUE\" tab is now your direct access terminal to the worlds I'm creating.",
 
         // =========================================================
         // LOG 6: SKILLS & CURSOS (log6.html)
@@ -493,6 +518,31 @@ const translations = {
 
         // Updates
         "updates-all-title": "SYSTEM PATCH NOTES",
+        // =========================================================
+        // GENERAL UPDATES
+        // =========================================================
+        "updates-all-title": "SYSTEM PATCH NOTES",
+        "btn-back-work": "[ VIEW GAME ]",
+
+        // Update Pecador 1.0.0
+        "update-pecador-100-h1": "GLOBAL GAME JAM RELEASE",
+        "update-pecador-100-p1": "First final build generated for submission to the Global Game Jam 2026. All core systems are functional, and the build has been wrapped with Windows executables. The gameplay loop was finalized at 11:00 PM, leaving only shader polish.",
+        "update-pecador-100-b1": "- [ADD] Procedural generation of corridors and connecting rooms successfully implemented.",
+        "update-pecador-100-b2": "- [ADD] 32-bit retro aesthetic (PSX) shaders compiled and applied to the main camera.",
+        "update-pecador-100-b3": "- [ADD] 3D audio system and distortion filters linked to the player's sanity.",
+
+        // Update Pecador 1.0.2
+        "update-pecador-102-h1": "AUDIO FIXES & NAVMESH OPTIMIZATION",
+        "update-pecador-102-p1": "This hotfix addresses sound collision issues reported during navigation in confined spaces. The audio occlusion calculation was rewritten to respect the architectural collision meshes, and the AI now loses the sound trail if the player is isolated in airtight areas.",
+        "update-pecador-102-b1": "- [FIX] Spatial attenuation filter applied to the stalker's footsteps.",
+        "update-pecador-102-b2": "- [FIX] Recalculation of NavMesh edges near the main area walls.",
+
+        // Update ZALA 0.1.5
+        "update-zala-h1": "AUDIO ENGINE & UI DISTORTION",
+        "update-zala-p1": "Environment update focused on interface stress tests and consolidating signal physics in Unreal Engine 5. The Signal Intersection mechanic now calculates frequencies correctly when two squad jammers overlap.",
+        "update-zala-b1": "- [SYS] Custom C++ signal physics logic implemented into the core architecture.",
+        "update-zala-b2": "- [TEST] UI distortion (Digital Body Horror) stress tests applied.",
+        "update-zala-b3": "- [SYNC] First MoCap files validated and synced with the MetaHumans mesh.",
 
         // Miscellaneous
         "miscellaneous-title": "MISCELLANEOUS ARCHIVE",
@@ -512,7 +562,7 @@ const translations = {
         "contact-p1": "Feel free to send me a message at <a href='mailto:douglaslima0929@gmail.com' style='color: var(--text-primary); text-decoration: underline;'>douglaslima0929@gmail.com</a>!",
         "contact-p3": "For professional networking, updates, and engineering discussions, you can find me over on my <a href='https://linkedin.com/in/createdbydouglaslima' target='_blank' style='color: var(--text-primary); text-decoration: underline;'>LinkedIn</a> page.",
 
-        // Internal Works (Pecador, Contempla)
+        // Internal Catalogue (Pecador, Contempla)
         "pecador-detailed-desc": "Immersive horror experience. The player navigates generated environments with an oppressive 32-bit atmosphere while facing dynamic patrol logic under NavMesh.",
         "btn-dl-win": "DOWNLOAD WIN (.ZIP)",
         "ver-patch-notes": "VIEW PATCH NOTES FOR THIS PROJECT",
