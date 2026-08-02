@@ -97,9 +97,7 @@ const translations = {
 
         // Registros
         "registry-all-title": "DIÁRIO DE DESENVOLVIMENTO",
-        "log-1": "Estrutura modular plana, novos estilos tipográficos compactos e tags dinâmicas acopladas.",
-        "log-2": "Apresentação concluída sobre redes aplicadas a games.",
-        "log-3": "Build final de Pecador, Contempla encapsulado. Sistemas estáveis.",
+
 
         // Updates
         "updates-all-title": "NOTAS DE ATUALIZAÇÃO DE SISTEMAS",
@@ -220,9 +218,7 @@ const translations = {
 
         // Registry
         "registry-all-title": "DEVELOPMENT LOGS",
-        "log-1": "Flat modular structure, new compact typographic styles, and dynamic tags attached.",
-        "log-2": "Completed presentation on networks applied to games.",
-        "log-3": "Final build of Pecador, Contempla encapsulated. Stable systems.",
+
 
         // Updates
         "updates-all-title": "SYSTEM PATCH NOTES",
