@@ -286,7 +286,19 @@ const translations = {
         "log-1-dev-heading": "DESENVOLVIMENTO",
         "log-1-p2": "A decisão de manter o sistema estático sem frameworks JS pesados (como React ou Vue) garante que o tempo de carregamento seja instantâneo. A identidade visual foi redesenhada para suportar alta densidade de informação em blocos de texto pequenos, acompanhando um sistema automatizado para destacar atualizações recentes e um switcher persistente de idiomas.",
 
-
+        // Meses (Abreviações)
+        "month-jan": "JAN",
+        "month-feb": "FEV",
+        "month-mar": "MAR",
+        "month-apr": "ABR",
+        "month-may": "MAI",
+        "month-jun": "JUN",
+        "month-jul": "JUL",
+        "month-aug": "AGO",
+        "month-sep": "SET",
+        "month-oct": "OUT",
+        "month-nov": "NOV",
+        "month-dec": "DEZ",
     },
     "en": {
         // Global Navigation
@@ -571,5 +583,19 @@ const translations = {
         "log-1-p1": "This log documents the fundamental change in the personal site's architecture. The main goal was to abandon Carrd's static templates and build a clean infrastructure, hosted directly on GitHub Pages with absolute control over every line of code.",
         "log-1-dev-heading": "DEVELOPMENT",
         "log-1-p2": "The decision to keep the system static without heavy JS frameworks (like React or Vue) ensures instantaneous load times. The visual identity was redesigned to support high information density in small text blocks, accompanied by an automated system to highlight recent updates and a persistent language switcher.",
+
+        // Meses (Abreviações)
+        "month-jan": "JAN",
+        "month-feb": "FEB",
+        "month-mar": "MAR",
+        "month-apr": "APR",
+        "month-may": "MAY",
+        "month-jun": "JUN",
+        "month-jul": "JUL",
+        "month-aug": "AUG",
+        "month-sep": "SEP",
+        "month-oct": "OCT",
+        "month-nov": "NOV",
+        "month-dec": "DEC",
     }
 };
