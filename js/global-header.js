@@ -1,4 +1,3 @@
-/* js/global-header.js */
 (function() {
     const url = window.location.href;
     const isInnerPage = url.includes('/catalogue/') || url.includes('/registry/') || url.includes('/updates/') || url.includes('/misc/');
@@ -8,7 +7,7 @@
         <header class="sys-header">
             <div class="header-logo-container">
                 <h1 data-i18n="header-author" style="margin: 0;">
-                    <a href="${prefix}index.html" style="color: inherit; text-decoration: none;">DOUGLAS LIMA.</a>
+                    <a href="/" style="color: inherit; text-decoration: none;">DOUGLAS LIMA.</a>
                 </h1>
             </div>
             
@@ -28,7 +27,7 @@
             </div>
             
             <nav class="nav-links">
-                <a href="${prefix}index.html" data-i18n="nav-home">HOME</a>
+                <a href="/" data-i18n="nav-home">HOME</a>
                 <a href="${prefix}about.html" data-i18n="nav-about">SOBRE</a>
                 <a href="${prefix}catalogue.html" data-i18n="nav-catalogue">CATÁLOGO</a>
                 <a href="${prefix}registry.html" data-i18n="nav-registry">REGISTROS</a>
@@ -41,9 +40,7 @@
     
     document.getElementById('header-container').innerHTML = headerHTML;
     
-    // ========================================================
-    // TEMA: BOTÃO (A leitura inicial já foi feita no <head>)
-    // ========================================================
+
     const themeToggle = document.getElementById('theme-toggle');
     
     themeToggle.addEventListener('click', () => {
@@ -56,14 +53,12 @@
         }
     });
 
-    // ========================================================
-    // LÓGICA DE ÁUDIO (Rádio SomaFM)
-    // ========================================================
+
     const audioBtn = document.getElementById('btn-sys-audio');
     const equalizer = document.getElementById('sys-equalizer');
     
     if (!window.sysRadio) {
-        window.sysRadio = new Audio('https://ice1.somafm.com/defcon-128-mp3');
+        window.sysRadio = new Audio('https://stream.nightride.fm/ebsm.mp3');
         window.sysRadio.volume = 0.3; 
     }
 
