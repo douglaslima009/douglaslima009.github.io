@@ -1,6 +1,4 @@
-/* js/global-header.js */
 (function() {
-    // Verifica a URL atual para injetar o "../" caso esteja em qualquer subpasta
     const url = window.location.href;
    const isInnerPage = url.includes('/catalogue/') || url.includes('/registry/') || url.includes('/updates/') || url.includes('/misc/');
     const prefix = isInnerPage ? '../' : '';
@@ -46,7 +44,6 @@
     
     document.getElementById('header-container').innerHTML = headerHTML;
     
-    // Configuração do Áudio
     const audioBtn = document.getElementById('btn-sys-audio');
     const equalizer = document.getElementById('sys-equalizer');
     
@@ -55,7 +52,6 @@
         window.sysRadio.volume = 0.3; 
     }
 
-    // Função para atualizar os visuais (Equalizador e Botão)
     function updateUI(isPlaying) {
         if (isPlaying) {
             audioBtn.innerText = '[ STOP ]';
@@ -65,8 +61,6 @@
             equalizer.classList.remove('playing');
         }
     }
-
-    // Função que tenta dar o play e lida com bloqueios do navegador
     function attemptPlay() {
         if (sessionStorage.getItem('sysRadioState') === 'playing') {
             window.sysRadio.play().then(() => {
@@ -79,10 +73,8 @@
         }
     }
 
-    // 1. Tenta rodar ao carregar a página normalmente
     attemptPlay();
 
-    // 2. Controle manual no botão
     audioBtn.addEventListener('click', () => {
         if (window.sysRadio.paused) {
             sessionStorage.setItem('sysRadioState', 'playing');
@@ -93,16 +85,10 @@
             updateUI(false);
         }
     });
-
-    // 3. SOLUÇÃO PARA O BOTÃO VOLTAR (BFCache)
-    // Tenta forçar o play assim que a página é descongelada
     window.addEventListener('pageshow', () => {
         setTimeout(attemptPlay, 100);
     });
 
-    // 4. A ARMADILHA (Recuperação de Interação)
-    // Se o usuário clicar em "Voltar" e o navegador forçar o bloqueio do som,
-    // nós ficamos observando. No primeiro clique que ele der na tela, o som volta.
     const resumeOnInteraction = () => {
         if (sessionStorage.getItem('sysRadioState') === 'playing' && window.sysRadio.paused) {
             attemptPlay();

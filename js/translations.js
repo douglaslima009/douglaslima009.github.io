@@ -1,4 +1,3 @@
-/* js/translations.js */
 const translations = {
     "pt": {
         // Navegação Global
@@ -64,7 +63,7 @@ const translations = {
         "pecador-meta-engine": "<span style='color: var(--text-dim);'>Engine:</span> Unity",
         "pecador-desc-2": "Um FPS de terror psicológico procedural criado em menos de 72 horas para Global Game Jam 2026.",
         "pecador-desc-3": "Apresenta sistemas ativos de IA tática sob NavMesh e áudio 3D imersivo, utilizando shaders PSX customizados para emular a estética retrô de 32-bit.",
-        "pecador-warn": "Aviso de conteúdo: Terror atmosférico e luzes piscando.",
+        "pecador-warn": "Aviso de conteúdo: Terror atmosférico e luzes piscantes.",
 
         //CATÁLOGO - ZALA
         "zala-meta-dev": "<span style='color: var(--text-dim);'>Desenvolvedor:</span> Douglas Lima",

@@ -13,19 +13,17 @@ document.addEventListener('DOMContentLoaded', () => {
     renderer.setSize(container.clientWidth, container.clientHeight);
     container.appendChild(renderer.domElement);
 
-    // CONFIGURAÇÃO DOS CONTROLES (ZOOM ATIVADO COM LIMITES FÍSICOS)
     const controls = new THREE.OrbitControls(camera, renderer.domElement);
     controls.enableDamping = true;
     controls.dampingFactor = 0.05;
-    controls.enableZoom = true;       // Permite o Scroll
-    controls.zoomSpeed = 0.7;         // Deixa a rolagem um pouco mais "pesada" e mecânica
-    controls.minDistance = 7.5;       // Impede que a câmera entre dentro do globo (Raio = 6)
-    controls.maxDistance = 25;        // Impede que o usuário dê zoom out infinito
+    controls.enableZoom = true;     
+    controls.zoomSpeed = 0.7;         
+    controls.minDistance = 7.5;       
+    controls.maxDistance = 25;        
 
     const globeGroup = new THREE.Group();
     scene.add(globeGroup);
 
-    // Wireframe
     const sphereGeo = new THREE.SphereGeometry(6, 24, 24);
     const wireMat = new THREE.MeshBasicMaterial({ 
         color: 0x333333, 
@@ -35,7 +33,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     globeGroup.add(new THREE.Mesh(sphereGeo, wireMat));
 
-    // Mapa Alpha
     const textureLoader = new THREE.TextureLoader();
     textureLoader.crossOrigin = 'Anonymous';
     const earthTex = textureLoader.load('https://raw.githubusercontent.com/mrdoob/three.js/master/examples/textures/planets/earth_specular_2048.jpg');
@@ -91,7 +88,6 @@ document.addEventListener('DOMContentLoaded', () => {
         markers.push(marker);
     });
 
-    // VARIÁVEIS DE TRACKING (Notificação Seguidora)
     const raycaster = new THREE.Raycaster();
     const mouse = new THREE.Vector2();
     let pointerDownX = 0, pointerDownY = 0;
