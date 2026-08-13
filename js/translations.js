@@ -94,6 +94,14 @@ const translations = {
         "mop-desc-4": "Uma versão online está atualmente em desenvolvimento, e mais atualizações virão em breve.",
         "mop-warn": "Nota: Este é um jogo de mesa projetado para 2 a 6 jogadores, focado no ensino de engenharia de software.",
 
+        //CATÁLOGO - SYNTHESIS
+        "synthesis-meta-dev": "<span style='color: var(--text-dim);'>Desenvolvido por:</span> VORTEX",
+        "synthesis-meta-genre": "<span style='color: var(--text-dim);'>Gênero:</span> Roguelike / Educacional",
+        "synthesis-meta-engine": "<span style='color: var(--text-dim);'>Engine:</span> Godot",
+        "synthesis-desc-2": "O jogador explora uma instalação de pesquisa em 2D com arte pixelada, abandonando o combate convencional para depender de lógica, estratégia e resolução prática de problemas para navegar em cada setor.",
+        "synthesis-desc-3": "A jogabilidade se concentra em se adaptar a layouts de sala que mudam proceduralmente, resolver quebra-cabeças integrados para desbloquear recursos e contribuir com o desempenho individual para classificações de clãs cooperativos.",
+        "synthesis-warn": "Aviso: O conteúdo da compilação de design associada está em desenvolvimento. Atualmente, estou trabalhando no jogo completo, que será lançado no futuro. A propriedade SYNTHESIS é de posse da VORTEX.",
+
         // Registros
         "registry-all-title": "LOGS DE DESENVOLVIMENTO",
         // =========================================================
@@ -391,6 +399,14 @@ const translations = {
         "mop-desc-3": "The board consists of mystical libraries (divided into Creational, Structural, and Behavioral patterns), corridors, and intellectual combat areas, where players use knowledge points to duel.",
         "mop-desc-4": "An online version is currently in development, and more updates will be coming soon.",
         "mop-warn": "Note: This is a tabletop game designed for 2 to 6 players, focused on teaching software engineering.",
+
+        //CATÁLOGO - SYNTHESIS
+        "synthesis-meta-dev": "<span style='color: var(--text-dim);'>Developed by:</span> VORTEX",
+        "synthesis-meta-genre": "<span style='color: var(--text-dim);'>Genre:</span> Roguelike / Educational",
+        "synthesis-meta-engine": "<span style='color: var(--text-dim);'>Engine:</span> Godot",
+        "synthesis-desc-2": "The player explores a dynamic 2D pixel-art research facility, abandoning conventional combat to rely on logic, strategy, and practical problem-solving to navigate each sector.",
+        "synthesis-desc-3": "Gameplay focuses on adapting to procedurally shifting room layouts, solving integrated puzzles to unlock resources, and contributing individual run performance to cooperative clan rankings.",
+        "synthesis-warn": "Warning: The content of the associated design compilation is in development. I am currently working on the full game, which will be released in the future. SYNTHESIS property is possessed by VORTEX.",
 
         // Registry
         // =========================================================
