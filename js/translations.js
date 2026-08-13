@@ -120,6 +120,19 @@ const translations = {
         "log-1": "Deploy do software interno de gestão na Ecatege.",
 
         // =========================================================
+        // LOG 12: Trailers de Early Build, UFC e o futuro do VORTEX (log12.html)
+        // =========================================================
+
+        "log-12": "Trailers de Early Build, UFC e o futuro do VORTEX.",
+        "log-12-title": "Trailers de Early Build, UFC e o futuro do VORTEX.",
+        "log-12-h1": "EARLY BUILDS NO AR",
+        "log-12-p1": "Liberamos oficialmente os primeiros trailers de Early Build de dois dos nossos principais projetos em desenvolvimento no VORTEX: o Project V e o SYNTHESIS. Compartilhar esses primeiros vislumbres jogáveis, o ritmo de gameplay e a atmosfera visual de cada título é um marco muito especial para a equipe, sintetizando meses de prototipagem, arquitetura de sistemas e polimento.",
+        "log-12-h2": "SEMESTRE 2026.2",
+        "log-12-p2": "Para coroar esse momento, participamos do evento de acolhimento aos novos estudantes da Universidade Federal do Ceará (UFC) do semestre 2026.2, onde apresentamos o laboratório e exibimos as builds em primeira mão para os novatos. A repercussão foi excelente e o entusiasmo do pessoal trouxe um retorno extremamente positivo para a visibilidade do VORTEX dentro do campus.",
+        "log-12-h3": "PRÓXIMOS PASSOS",
+        "log-12-p3": "A energia desse evento nos deixou ainda mais animados para acelerar a produção. Estamos trabalhando ao máximo nos bastidores para evoluir as mecânicas, narrativas e a engenharia de ambos os títulos. Muito em breve traremos novos devlogs e notas de desenvolvimento detalhando o avanço dessas produções. Fiquem de olho!",
+
+        // =========================================================
         // LOG 11: O NOVO SITE (log11.html)
         // =========================================================
         "log-11-title": "Reestruturação do site e busca por identidade digital.",
@@ -423,6 +436,20 @@ const translations = {
         "log-3": "Backend scalability for the YEWS platform.",
         "log-2": "Delivery of corporate solutions at Bionic Productions.",
         "log-1": "Deployment of the internal management software at Ecatege.",
+
+        // =========================================================
+        // LOG 12: Trailers de Early Build, UFC e o futuro do VORTEX (log12.html)
+        // =========================================================
+
+        "log-12": "Early Build trailers, UFC and the future of VORTEX.",
+        "log-12-title": "Early Build trailers, UFC and the future of VORTEX.",
+        "log-12-h1": "EARLY BUILDS LIVE",
+        "log-12-p1": "We have officially released the first Early Build trailers for two of our main projects under development at VORTEX: Project V and SYNTHESIS. Sharing these first playable glimpses, the gameplay rhythm, and the visual atmosphere of each title is a very special milestone for the team, synthesizing months of prototyping, systems architecture, and polishing.",
+        "log-12-h2": "2026.2 SEMESTER",
+        "log-12-p2": "To top off this milestone, we participated in the welcoming event for new students at the Federal University of Ceará (UFC) for the 2026.2 semester, where we presented the lab and showcased the builds firsthand to incoming freshmen. The reception was excellent, and the students' enthusiasm brought an extremely positive boost to VORTEX's visibility on campus.",
+        "log-12-h3": "NEXT STEPS",
+        "log-12-p3": "The energy from this event has made us even more excited to accelerate production. We are working hard behind the scenes to evolve the mechanics, narratives, and engineering of both titles. Very soon we will bring new devlogs and development notes detailing the progress of these productions. Stay tuned!",
+
 
         // =========================================================
         // LOG 11: O NOVO SITE (log11.html)
