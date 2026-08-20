@@ -35,7 +35,7 @@ const translations = {
         "about-exp-5": "<span><strong>Bionic Productions</strong> - Team Lead & Software Engineer</span><span class='time-ago'>2023</span>",
         "about-exp-6": "<span><strong>Ecatege Contabilidade & Serviços</strong> - Full-Stack Software Developer Internship</span><span class='time-ago'>2022</span>",
         "about-exp-7": "<span><strong>AAA Studio (NDA)</strong> - QA & Technical Game Tester</span><span class='time-ago'>2026</span>",
-        "about-exp-8": "<span><strong>CENTEC</strong> - Lead Game Designer</span><span class='time-ago'>2026 - PRES</span>",
+        "about-exp-8": "<span><strong>CENTEC</strong> - Game Designer</span><span class='time-ago'>2026 - PRES</span>",
 
         "about-edu-title": "EDUCAÇÃO",
 
