@@ -53,8 +53,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // GOOGLE MAPS
     const experiences = [
-        { id: 'exp8', lat: -3.74, lon: -38.52, title: "Lead Game Designer", company: "CENTEC", year: "2026 - PRES" },
-        { id: 'exp7', lat: 61.01, lon: 25.52, title: "QA & Technical Game Tester", company: "AAA Studio (NDA)", year: "2026 - PRES" },
+        { id: 'exp8', lat: -3.74, lon: -38.52, title: "Game Designer", company: "CENTEC", year: "2026 - PRES" },
+        { id: 'exp7', lat: 61.01, lon: 25.52, title: "QA & Technical Game Tester", company: "AAA Studio (NDA)", year: "2026" },
         { id: 'exp1', lat: -4.96, lon: -37.97, title: "Lead Game Designer", company: "LearningLab", year: "2025 - PRES" },
         { id: 'exp2', lat: -3.73, lon: -38.52, title: "Lead Game Director", company: "VORTEX UFC", year: "2025 - PRES" },
         { id: 'exp3', lat: 34.084759, lon: -118.337290, title: "Junior Backend Eng.", company: "YEEZY (USA)", year: "2024" },
